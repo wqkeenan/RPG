@@ -1,0 +1,702 @@
+[
+
+	/* UnCiv RPG */
+
+    // Sword Gunpowder Mounted Scout Siege Archery Ranged Gunpowder Armored Melee Water Ranged Water Submarine Beast Monster Undead Heroic Magical Elemental
+
+	/* Ancient Era */
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"cost": 70
+	},
+	{
+		"name": "Settler",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 106,
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Spearman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 8,
+		"cost": 40,
+		"obsoleteTech": "The Weave",
+		"upgradesTo": "Spearman II",
+		"uniques": ["[+50]% Strength <vs [Mounted Beast] units>"],
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [
+			{"text": "Have spear, will travel."}
+		    ]
+	},
+	{
+		"name": "Scout",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"obsoleteTech": "Scientific Theory",
+		"uniques": ["May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit"],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Spearman II",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 13,
+		"cost": 56,
+		"requiredTech": "The Weave",
+		"uniques": ["[+50]% Strength <vs [Mounted Beast] units>"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Military Service",
+		"requiredResource": "Iron",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
+	
+
+// Barbarian Units
+	{
+		"name": "Wildman",
+		"unitType": "Sword",
+		"uniqueTo": "Barbarians",
+		"replaces": "Spearman",
+		"movement": 2,
+		"strength": 7,
+		"cost": 20,
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Zombies",
+		"uniques": [
+        	"[+50]% Strength <vs Magical>",
+        	"Can move immediately once bought"
+ 	       	],
+		"attackSound": "nonmetalhit",
+		"civilopediaText": [
+            { "text": "These uncivilized men from the wastes fear magic will destroy their world and seek to rid the world of all who use it. " }
+            ]
+	},
+ 	{
+		"name": "Goblin Mob",
+		"unitType": "Archery",
+		"uniqueTo": "Barbarians",
+		"replaces": "Archer",
+		"movement": 2,
+		"strength": 6,
+		"rangedStrength": 8,
+		"range": 1,
+		"cost": 35,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Manticore",
+		"uniques": [
+        	"Can move immediately once bought"
+ 	       	],
+		"attackSound": "nonmetalhit",
+		  "civilopediaText": [
+            { "text": "Goblins prefer to use ranged attacks due to their physical weakness. Poor eysight limits their range." }
+            ]
+    },
+    {
+		"name": "Zombie",
+		"unitType": "Undead",
+		"uniqueTo": "Barbarians",
+		"replaces": "Spearman",
+		"movement": 1,
+		"strength": 11,
+		"cost": 45,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Giant Boar",
+		"uniques": [
+        	"No defensive terrain bonus",
+        	"Ignores terrain cost",
+        	"[+25]% Strength <vs [Melee] units> <when defending>",
+        	"[+100]% Strength <vs [Ranged] units> <when defending>",
+        	"[+100]% Strength <vs cities> <when defending>",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		"civilopediaText": [
+			{"text": "Ranged weapons are less effective against these reanimated corpses. Best to get up close and hack them to pieces."}
+		]
+	},
+ 	{
+		"name": "Troglodyte",
+		"unitType": "monster",
+		"uniqueTo": "Barbarians",
+		"replaces": "Chariot Archer",
+		"movement": 2,
+		"strength": 12,
+		"cost": 50,
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Gryphon",
+		"uniques": [
+        	"[+33]% Strength <vs Mounted>",
+        	"Can move immediately once bought"
+ 	       	],
+		"attackSound": "nonmetalhit",
+		  "civilopediaText": [
+            { "text": "These reptilian humanoids emerge from the deep caverns where they dwell to take captives back to their lair. Horses are terrified of them." }
+            ]
+    },
+    {
+		"name": "Dire Wolf",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Horseman",
+		"movement": 2,
+		"strength": 15,
+		"cost": 75,
+		"uniques": [
+        	"[+50]% Strength <vs cities> <when defending>",
+        	"No movement cost to pillage",
+        	"Ignores terrain cost",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		  "civilopediaText": [
+            { "text": "A pack of these oversized wolves can tear a band of soldiers to pieces." }
+            ]
+	},
+    {
+		"name": "Giant Boar",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Wildman",
+		"movement": 2,
+		"strength": 14,
+		"cost": 70,
+		"uniques": [
+        	"[+50]% Strength <vs cities> <when defending>",
+        	"No movement cost to pillage",
+        	"Ignores terrain cost",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		  "civilopediaText": [
+            { "text": "These beasts are extremely aggressive, beware. (swordsman)" }
+            ]
+	},
+    {
+		"name": "Manticore",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"replaces": "Goblin Mob",
+		"movement": 3,
+		"strength": 20,
+		"rangedStrength": 12,
+		"range": 1,
+		"cost": 100,
+		"uniques": [
+        	"No defensive terrain bonus",
+        	"No defensive terrain penalty",
+        	"Ignores terrain cost",
+        	"[+25]% Strength <vs [Ranged] units>",
+        	"[+100]% Strength <vs cities> <when defending>",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+        "civilopediaText": [
+            { "text": "A large winged lion that shots iron spikes from its tail. (crossbowman)" }
+            ]
+	}, 
+    {
+		"name": "Owlbear",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Troglodyte",
+		"movement": 2,
+		"strength": 21,
+		"cost": 120,
+		"uniques": [
+        	"[+50]% Strength <vs cities> <when defending>",
+        	"May withdraw before melee ([30]%)",
+        	"Invisible to non-adjacent units",
+            "Double movement in [Forest Jungle]",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		  "civilopediaText": [
+            { "text": "These ambush predators are are hard to spot. Rangers are your best defence. (knight)" }
+            ]
+	},
+    {
+		"name": "Gryphon",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Dire Wolf",
+		"movement": 4,
+		"strength": 28,
+		"cost": 150,
+		"uniques": [
+        	"[+100]% Strength <vs [Melee] units> <when defending>",
+        	"[+200]% Strength <vs cities> <when defending>",
+        	"Ignores Zone of Control",
+        	"Can move immediately once bought",
+        	"May withdraw before melee ([60]%)",
+        	"No defensive terrain bonus",
+        	"No defensive terrain penalty",
+        	"Ignores terrain cost",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		  "civilopediaText": [
+            { "text": "These dangerous flying beasts easily evade melee units. Send archers, mages, or adventurers to slay them.(knight)" }
+            ]
+	},
+	{
+		"name": "Orge",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"replaces": "Giant Boar",
+		"movement": 3,
+		"strength": 26,
+		"cost": 150,
+		"uniques": [
+        	"No defensive terrain bonus",
+        	"Double movement in [Hills]",
+        	"[+100]% Strength <vs cities>",
+        	"Ignores Zone of Control",
+        	"Can move immediately once bought"
+ 	       	],
+		"attackSound": "monster",
+        "civilopediaText": [
+            { "text": "Giant club wielding humanoids. (replaces musketeer)" }
+            ]
+	},
+    {
+		"name": "Owlbear II",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Owlbear",
+		"movement": 2,
+		"strength": 22,
+		"cost": 120,
+		"uniques": [
+        	"[+50]% Strength <vs cities> <when defending>",
+        	"May withdraw before melee ([30]%)",
+        	"Invisible to non-adjacent units",
+            "Double movement in [Forest Jungle]",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		"civilopediaText": [
+            { "text": "These ambush predators are are hard to spot. Rangers are your best defence." }
+            ]
+	},
+    {
+		"name": "Wright",
+		"unitType": "Undead",
+		"uniqueTo": "Barbarians",
+		"replaces": "Owlbear",
+		"movement": 1,
+		"strength": 24,
+		"rangedStrength": 18,
+		"range": 1,
+		"cost": 45,
+		"uniques": [
+        	"No defensive terrain bonus",
+        	"Ignores terrain cost",
+        	"Can see invisible [All] units",
+        	"Heals [25] damage if it kills a unit",
+        	"[+100]% Strength <vs [Melee] units> <when defending>",
+        	"[+200]% Strength <vs [Ranged] units> <when defending>",
+        	"[+200]% Strength <vs cities> <when defending>",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		"civilopediaText": [
+			{"text": "These shadowy undead spirits are hard to kill, send Adventurers. (cannon)"}
+		]
+	},
+    {
+		"name": "Gryphon II",
+		"unitType": "Beast",
+		"uniqueTo": "Barbarians",
+		"replaces": "Gryphon",
+		"movement": 4,
+		"strength": 28,
+		"cost": 150,
+		"uniques": [
+        	"[+100]% Strength <vs [Melee] units> <when defending>",
+        	"[+200]% Strength <vs cities> <when defending>",
+        	"Ignores Zone of Control",
+        	"Can move immediately once bought",
+        	"May withdraw before melee ([60]%)",
+        	"No defensive terrain bonus",
+        	"No defensive terrain penalty",
+        	"Ignores terrain cost",
+        	"Unable to capture cities"
+ 	       	],
+		"attackSound": "monster",
+		"civilopediaText": [
+            { "text": "These dangerous flying beasts easily evade melee units. Send archers, mages, or adventurers to slay them." }
+            ]
+	}, 
+	{
+		"name": "Dragon",
+		"unitType": "Monster",
+		"uniqueTo": "Barbarians",
+		"replaces": "Gryphon II",
+		"movement": 6,
+		"strength": 160,
+		"rangedStrength": 140,
+		"range": 1,
+		"cost": 750,
+		"uniques": [
+            "Destroys tile improvements when attacking",
+            "[+50]% Strength <vs [Ranged] units> <when defending>",
+            "[+100]% Strength <vs cities> <when defending>",
+            "[100] XP gained from combat",
+            "Ignores Zone of Control",
+            "All tiles cost 1 movement",
+            "May withdraw before melee ([60]%)",
+            "No defensive terrain bonus",
+            "No defensive terrain penalty",
+            "Can pass through impassable tiles",
+            "May travel on Water tiles without embarking",
+            "Can enter ice tiles"
+            ],
+		"attackSound": "monster",
+		"civilopediaText": [
+            { "text": "These dangerous flying beasts easily evade melee units. Send archers, mages, or adventurers to slay them." }
+            ]
+	},
+
+
+// Magical & Heroic
+	{
+		"name": "Acolyte",
+		"unitType": "Magical",
+		"movement": 3,
+		"strength": 4,
+		"rangedStrength": 9,
+		"cost": 200,
+		"requiredTech": "The Weave",
+		"requiredResource": "Mana",
+		"obsoleteTech": "",
+		"upgradesTo": "Mage",
+		"uniques": ["[+50]% Strength <vs cities> <when attacking>", 
+		     "No defensive terrain bonus",
+			 "Never appears as a Barbarian unit"
+			 ],
+		"hurryCostModifier": 40,
+		"attackSound": "spell"
+	},
+	{
+		"name": "Mage",
+		"unitType": "Magical",
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 15,
+		"cost": 500,
+		"requiredTech": "The Weave",
+		"requiredResource": "Mana",
+		"uniques": ["[+100]% Strength <vs cities> <when attacking>", "No defensive terrain bonus","Damage is ignored when determining unit Strength",
+			"Must set up to ranged attack", "[+1] Sight", "Never appears as a Barbarian unit"],
+		"hurryCostModifier": 60,
+		"attackSound": "spell"
+	},
+	{
+		"name": "Wizard",
+		"unitType": "Magical",
+		"movement": 5,
+		"strength": 14,
+		"rangedStrength": 30,
+		"cost": 800,
+		"requiredTech": "The Weave",
+		"requiredResource": "Mana",
+		"uniques": [
+					"[+200]% Strength <vs cities> <when attacking>", 
+					"No defensive terrain bonus",
+					"Damage is ignored when determining unit Strength",
+			  		"Never appears as a Barbarian unit"
+				],
+		"hurryCostModifier": 80,
+		"attackSound": "spell"
+	},
+	{
+		"name": "Ranger",
+		"replaces": "Scout",
+		"unitType": "Heroic",
+		"movement": 3,
+		"strength": 5,
+		"cost": 50,
+		"obsoleteTech": "Bardic Tales",
+		"upgradesTo": "Adventurer",
+		"uniques": ["May upgrade to [Adventurer] through ruins-like effects", "Never appears as a Barbarian unit"],
+		"promotions": ["Ranger"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Adventurer",
+		"unitType": "Heroic",
+		"movement": 3,
+		"strength": 20,
+		"cost": 320,
+		"requiredTech": "Bardic Tales",
+		"requiredResource": "Mead",
+		"upgradesTo": "Legend",
+        "promotions": ["Ranger", "Dungeoneer"],
+        "uniques": [
+		          "May heal outside of friendly territory", 
+		          "Damage is ignored when determining unit Strength",
+		          "No defensive terrain bonus", 
+		          "Never appears as a Barbarian unit"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Legend",
+		"unitType": "Heroic",
+		"movement": 3,
+		"strength": 60,
+		"cost": 480,
+		"requiredTech": "Bardic Tales",
+		"requiredResource": "Mead",
+        "promotions": ["Fighter"],
+		"uniques": [
+		          "May heal outside of friendly territory", 
+		          "Damage is ignored when determining unit Strength",
+		          "No defensive terrain bonus", 
+		          "Never appears as a Barbarian unit"
+				],
+		"attackSound": "metalhit"
+	},
+
+	
+// Archery Units	
+	{
+		"name": "Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 7,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "War Elephant",
+		"unitType": "Archery",
+		"movement": 3,
+		"strength": 9,
+		"rangedStrength": 11,
+		"cost": 70,
+		"requiredTech": "Military Service",
+		"uniques": ["No defensive terrain bonus"],
+		"attackSound": "elephant"
+	},
+	
+// Mounted	
+	{
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 12,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	}
+
+// Seige
+	{
+		"name": "Catapult",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 7,
+		"rangedStrength": 8,
+		"cost": 75,
+		"requiredTech": "Mathematics",
+		"requiredResource": "Iron",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Ballista",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight", "Never appears as a Barbarian unit"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Ballista",
+		"unitType": "Siege",
+		"replaces": "Catapult",
+		"movement": 2,
+		"strength": 8,
+		"rangedStrength": 10,
+		"cost": 75,
+		"requiredResource": "Iron",
+		"requiredTech": "Mathematics",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 30,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources",
+            "Uncapturable", "Automation is a primary action"]
+	},
+	{
+		"name": "Trireme",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Sailing",
+		"uniques": ["Cannot enter ocean tiles", "Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Galley",
+		"unitType": "Melee Water",
+		"uniqueTo": "Barbarians",
+		"movement": 3,
+		"strength": 7,
+		"cost": 40,
+		"uniques": ["Cannot enter ocean tiles"],
+		"upgradesTo": "Trireme",
+		"attackSound": "nonmetalhit"
+		//Barbarian unique naval unit, weaker and slower than Trireme.
+	},
+	{
+		"name": "War Elephant",
+		"unitType": "Archery",
+		"movement": 3,
+		"strength": 9,
+		"rangedStrength": 11,
+		"cost": 70,
+		"requiredTech": "Military Service",
+		"uniques": ["No defensive terrain bonus"],
+		"attackSound": "elephant"
+	},
+
+	/* Classical Era */
+
+
+	// Rennaisance Era
+
+	{
+		"name": "Caravel",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 20,
+		"cost": 120,
+		"requiredTech": "Sailing",
+		"uniques": ["[+1] Sight", "May withdraw before melee ([80]%)"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+
+
+	// Information Era
+
+
+	/* Great people */
+
+	{
+		"name": "Great Artist",
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "Can instantly construct a [Landmark] improvement <by consuming this unit>",
+            "Great Person - [Culture]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Sage",
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research",
+            "Can instantly construct a [Academy] improvement <by consuming this unit>",
+            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Merchant",
+		"unitType": "Civilian",
+		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold and [30] Influence",
+            "Can instantly construct a [Customs house] improvement <by consuming this unit>",
+			"Great Person - [Gold]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Engineer",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a building",
+            "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
+            "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+	{
+		"name": "Great Prophet",
+		"unitType": "Civilian",
+		"uniques": [
+            "Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            "Can [Spread Religion] [4] times",
+			"Removes other religions when spreading religion",
+            "May found a religion",
+            "May enhance a religion",
+			"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Hidden when religion is disabled",
+			"Takes your religion over the one in their birth city"],
+		"movement": 2,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Great General",
+		"unitType": "Civilian",
+		"uniques": [
+            "Empire enters a [8]-turn Golden Age <by consuming this unit>",
+            "[+15]% Strength bonus for [Military] units within [2] tiles",
+            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			"Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"movement": 2
+	},
+
+
+	/* Religious units */
+
+	{
+		"name": "Missionary",
+		"unitType": "Civilian",
+		"uniques": ["Can [Spread Religion] [2] times", "May enter foreign tiles without open borders, but loses [250] religious strength each turn it ends there",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+			"[-1] Sight", "Unbuildable", "Religious Unit", "Hidden when religion is disabled"],
+		"movement": 4,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Inquisitor",
+		"unitType": "Civilian",
+		"uniques": ["Prevents spreading of religion to the city it is next to",
+			"Can [Remove Foreign religions from your own cities] [1] times",
+			"Can be purchased with [Faith] [in all cities in which the majority religion is an enhanced religion]",
+			"[+1] Sight", "Hidden when religion is disabled", "Unbuildable", "Religious Unit"
+		],
+		"movement": 3
+	}
+
+
+]
