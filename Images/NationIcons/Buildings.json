@@ -1,0 +1,467 @@
+[
+//	 Ancient Era
+
+	// Always available
+	{
+		"name": "Palace",
+		"isNationalWonder": true,
+		"production": 3,
+		"science": 3,
+		"gold": 3,
+		"culture": 1,
+		"cityStrength": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city","Provides [1] [Mead]"]
+	},
+	{
+		"name": "Obelisk",
+		"culture": 2,
+		"science": 1,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Jewler",
+		"requiredNearbyImprovedResources": ["Gems","Gold Ore","Silver"],
+		"happiness": 1,
+		"culture": 1,
+		"specialistSlots": {"Artist": 1},
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"requiredTech": "Gem Cutting",
+		"uniques": [ 
+			"[+1 Happiness] from every [Gems] tiles [in this city]",
+			"[+1 Gold] from every [Gold Ore] tiles [in this city]",
+			"[+1 Gold] from every [Silver] tiles [in this city]",
+			"Doubles Gold given to enemy if city is captured",
+			"Destroyed when the city is captured"
+			]
+	},
+	{
+		"name": "Tavern",
+		"requiredNearbyImprovedResources": ["Honey"],
+		"happiness": 1,
+		"cost": 75,
+		"specialistSlots": {"Artist": 1},
+		"hurryCostModifier": 10,
+		"maintenance": 1,
+		"requiredTech": "Fermentation",
+		"uniques": [ 
+			"Provides [1] [Mead]",
+			"[+1 Happiness] <after discovering [Stringed Instruments]>",
+			"[+2 Culture] <after discovering [Bardic Tales]>",
+			"[+1 Gold] from every [Honey] tiles [in this city]",
+			"[+1 Gold] from every [Wine] tiles [in this city]",
+			"New [Heroic] units start with [15] Experience [in this city] <after discovering [Bardic Tales]>",
+			"Destroyed when the city is captured"
+			]
+	},
+	{
+		"name": "Smithy",
+		"requiredNearbyImprovedResources": ["Iron","Horses"],
+		"production": 2,
+		"cost": 75,
+		"hurryCostModifier": 25,
+		"requiredTech": "Smithing",
+		"uniques": [ 
+			"[Mounted] Units adjacent to this city heal [5] HP per turn when healing",
+			"[+1 Production] from every [Iron] tiles [in this city]"
+			]
+	},
+	{
+		"name": "Armory",
+		"cost": 160,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Fine Steel",
+		"requiredBuilding": "Barracks",
+		"uniques": [ 
+			"[Sword,Archery] Units adjacent to this city heal [5] HP per turn when healing",
+			"New [Sword,Mounted,Scout,Archery] units start with [15] Experience [in this city]",
+			"Destroyed when the city is captured"	
+			]
+	},
+	// Column 1
+	{
+		"name": "Mage Tower",
+		"science": 2,
+		"specialistSlots": {"Scientist": 1},
+		"hurryCostModifier": 60,
+		"maintenance": 3,
+		"requiredTech": "Invocation",
+		"uniques": [ 
+			"[+2 Science] from [Runestone] tiles [in this city]",
+			"New [Magical] units start with [15] Experience [in this city]",
+			"[Magical] Units adjacent to this city heal [5] HP per turn when healing",
+			"Destroyed when the city is captured"	
+			]
+	},
+	{
+		"name": "Granary",
+		"food": 2,
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"
+			],
+		"requiredTech": "Pottery"
+	},
+
+	{
+		"name": "Market",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Currency"
+	},
+	{
+		"name": "Barracks",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Military Service"
+	},
+	{
+		"name": "Conclave",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Magical] units start with [15] Experience [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Military Service"
+	},
+	{
+		"name": "Library",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Elvish"
+	},
+	{
+		"name": "Rune Stone Activation",
+		"culture": 1,
+		"isNationalWonder": true,
+		"requiredResource": "Mana",
+		"greatPersonPoints": {"Great Scientist": 2},
+        "uniques": ["[+10]% [Science] [in all cities]"],
+		"requiredTech": "The Weave",
+		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
+	},
+	{
+		"name": "Walls",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"hurryCostModifier": 25,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Wharf",
+		"cost": 75,
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["Must be next to [Coast]", "[+1 Food] from [Ocean] tiles [in this city]",
+			"[+1 Food] from [Coast] tiles [in this city]", "[+1 Food] from [Fish] tiles [in this city]" ],
+		"requiredTech": "Optics"
+	},
+	{
+		"name": "Stable",
+		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Cattle] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]"],
+		"requiredTech": "Animal Husbandry"
+	},
+	{
+		"name": "Catacombs",
+		"maintenance": 0,
+		"uniques": [ "[+15]% Production when constructing [Undead] units [in this city]"],
+		"happiness": 2,
+		"requiredBuilding": "Shrine",
+		"hurryCostModifier": 25,
+		"requiredTech": "Masonry"
+	},
+	{
+		"name": "Arena",
+		"maintenance": 1,
+		"uniques": [ "[+15]% Production when constructing [Beast] units [in this city]"],
+		"happiness": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Green Dragon Inn",
+		"happiness": 1,
+		"culture": 2,
+		"gold": 2,
+		"cityHealth": 40,
+		"isWonder": true,
+		"uniques": ["Provides [1] [Mead]", "Gain a free [Tavern] [in this city]","New [Heroic] units start with [15] Experience [in this city]"],
+		"requiredTech": "Bardic Tales",
+		"quote": "From everywhere adventurers are attracted to this legendary inn attracts to share experience, recruit, and of course, drink mead."
+	},
+
+// Column 2
+	{
+		"name": "Stone Works",
+		"happiness": 1,
+		"production": 1,
+		"requiredNearbyImprovedResources": ["Marble", "Stone"],
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["Must not be on [Plains]",
+			"[+1 Production] from [Stone] tiles [in this city]",
+			"[+1 Production] from [Marble] tiles [in this city]"],
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "Water Mill",
+		"maintenance": 2,
+		"food": 2,
+		"production": 1,
+		"hurryCostModifier": 25,
+		"uniques": ["Must be on [River]"],
+		"requiredTech": "Construction"
+	},
+
+	// Classical Era
+
+	// Column 3
+
+	{
+		"name": "Courthouse",
+		"maintenance": 4,
+		"hurryCostModifier": 50,
+		"uniques": ["Remove extra unhappiness from annexed cities",
+			"Can only be built [in annexed cities]"],
+		"requiredTech": "Mathematics"
+	},
+	{
+		"name": "Hanging Gardens",
+		"greatPersonPoints": {"Great Artist": 1},
+		"food": 6,
+		"culture": 1,
+		"isWonder": true,
+		"requiredTech": "Mathematics",
+		"uniques": ["Gain a free [Garden] [in this city]"],
+		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
+	},
+	{
+		"name": "Terracotta Army",
+		"culture": 6,
+		"isWonder": true,
+		"greatPersonPoints": {"Great Artist": 1},
+		"requiredTech": "Construction",
+		"quote": "'Regard your soldiers as your children, and they will follow you into the deepest valleys; look on them as your own beloved sons, and they will stand by you even unto death.' - Sun Tzu"
+	},
+	// Column 4
+	{
+		"name": "Temple",
+		"faith": 2,
+		"requiredBuilding": "Shrine",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Religion",
+		"uniques": ["Hidden when religion is disabled", "Destroyed when the city is captured"]
+	},
+	{
+		"name": "Mud Pyramid Mosque",
+		"replaces": "Temple",
+		"uniqueTo": "Songhai",
+		"maintenance": 0,
+		"hurryCostModifier": 25,
+		"culture": 2,
+		"faith": 2,
+		"requiredBuilding": "Shrine",
+		"requiredTech": "Philosophy"
+	},
+	{
+		"name": "National College",
+		"cost": 125,
+		"science": 3,
+		"culture": 1,
+		"isNationalWonder": true,
+		"percentStatBonus": {"science": 50},
+		"uniques": ["Requires a [Library] in all cities", "Cost increases by [30] per owned city"],
+		"requiredTech": "Philosophy"
+	},
+	{
+		"name": "The Oracle",
+		"culture": 3,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"isWonder": true,
+		"uniques": ["Free Social Policy"],
+		"requiredTech": "Divination",
+		"quote": "'The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing' - Socrates"
+	},
+	{
+		"name": "Amphitheater",
+		"culture": 3,
+		"specialistSlots": {"Artist": 1},
+		"requiredBuilding": "Monument",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "Aqueduct",
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["[40]% Food is carried over after population increases [in this city]"],
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "Colossus",
+		"cost": 185,
+		"culture": 1,
+		"gold": 5,
+		"greatPersonPoints": {"Great Merchant": 1},
+		"isWonder": true,
+		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
+		"requiredTech": "Metal Working",
+		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
+	},
+
+	// Medieval Era
+
+	// Column 5
+	{
+		"name": "Garden",
+		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"requiredTech": "Theology"
+	},
+
+	{
+		"name": "Workshop",
+		"maintenance": 2,
+		"production": 2,
+		"specialistSlots": {"Engineer": 1},
+		"hurryCostModifier": 25,
+		"percentStatBonus": {"production": 10},
+		"requiredTech": "Smithing"
+	},
+	{
+		"name": "Forge",
+		"maintenance": 1,
+		"hurryCostModifier": 25,
+		"requiredNearbyImprovedResources": ["Iron"],
+		"requiredTech": "Metal Working",
+		"uniques": ["[+15]% Production when constructing [Spaceship part] units [in this city]",
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]"]
+	},
+	// Column 6
+	{
+		"name": "Harbor",
+		"cost": 120,
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"uniques": ["[+1 Production] from [Water resource] tiles [in this city]",
+			"Connects trade routes over water","Must be next to [Coast]"],
+		"requiredTech": "Astrolabe"
+	},
+
+
+	// Renaissance Era
+
+	// Column 7
+	{
+		"name": "Bank",
+		"gold": 2,
+		"specialistSlots": {"Merchant": 1},
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"gold": 25},
+		"requiredBuilding": "Market",
+		"requiredTech": "Trade"
+	},
+
+	// will be introduced in BNW expansion pack
+//	{
+//		"name": "Hanse",
+//		"replaces": "Bank",
+//		"uniqueTo": "Germany",
+//		"gold": 2,
+//		"specialistSlots": {"Merchant": 1},
+//		"hurryCostModifier": 15,
+//		"percentStatBonus": {"gold": 25},
+//		"uniques": ["+5% Production for every Trade Route with a City-State in the empire"],
+//		"requiredBuilding": "Market",
+//		"requiredTech": "Banking"
+//	},
+
+	// Industrial Era
+
+	// Column 9
+
+
+	// Column 10
+
+
+	// Modern Era
+
+	// Column 11
+
+
+	// Column 12
+
+
+	// Atomic Era
+
+	// Column 13
+
+	// Column 14
+
+	// Information Era
+
+	// Column 15
+
+	// Column 16
+
+
+	// Religious buildings
+
+	{
+		"name": "Cathedral",
+		"cost": 0,
+		"faith": 1,
+		"culture": 3,
+		"happiness": 1,
+		"specialistSlots": {"Artist": 1},
+		"uniques": ["Unbuildable", "Hidden when religion is disabled"]
+	},
+	{
+		"name": "Monastery",
+		"cost": 0,
+		"culture": 2,
+		"faith": 2,
+		"uniques": ["[+1 Culture, +1 Faith] from [Wine] tiles [in this city]",
+			"[+1 Culture, +1 Faith] from [Incense] tiles [in this city]",
+			"Unbuildable", "Hidden when religion is disabled", "Destroyed when the city is captured"]
+	},
+	{
+		"name": "Mosque",
+		"cost": 0,
+		"culture": 2,
+		"faith": 3,
+		"happiness": 1,
+		"uniques": ["Unbuildable", "Hidden when religion is disabled"]
+	},
+	{
+		"name": "Pagoda",
+		"cost": 0,
+		"culture": 2,
+		"faith": 2,
+		"happiness": 2,
+		"uniques": ["Unbuildable", "Hidden when religion is disabled"]
+	}
+]
