@@ -157,11 +157,11 @@
 		"overrideStats": true,
 		"unbuildable": true,
 		"occursOn": [
-			"Wasteland",
-			"Badlands",
+			"Grassland",
+			"Plains",
 			"Desert",
 			"Tundra",
-			"Permafrost"
+			"Snow"
 			],
 		"uniques": [
 			"Rough terrain", "Vegetation",
@@ -399,7 +399,7 @@
 		"occursOn": ["Ocean"],
 		"uniques": ["Must be adjacent to [1] to [6] [Coast] tiles",
 			"Must be adjacent to [0] [Ice] tiles",
-			"Neighboring tiles will convert to [Coast]",,
+			"Neighboring tiles will convert to [Coast]",
 			"Must not be on [1] largest landmasses"],
 		"turnsInto": "Mountain",
 		"impassable": true,
@@ -438,11 +438,13 @@
 		"gold": 3,
 		"production": 2,
 		"science": 3,
-		"occursOn": ["Desert","Tundra"],
+		"occursOn": ["Desert"],
 		"uniques": ["Must be adjacent to [0] [Coast] tiles",
 			"Must be adjacent to [0] [Grassland] tiles",
 			"Must be adjacent to [0] to [2] [Mountain] tiles",
-			"Must be adjacent to [0] to [4] [Elevated] tiles"],
+			"Must be adjacent to [0] to [4] [Elevated] tiles",
+			"Must be adjacent to [2] to [6] [Desert] tiles"
+			],
 		"turnsInto": "Mountain",
 		"impassable": true,
 		"unbuildable": true,

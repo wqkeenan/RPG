@@ -14,6 +14,22 @@
 		"uniques": ["Indicates the capital city","Provides [1] [Mead]"]
 	},
 	{
+		"name": "Monument",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Shrine",
+		"faith": 1,
+		"cost": 40,
+		"maintenance": 1,
+		"requiredTech": "Pottery",
+		"uniques": ["Hidden when religion is disabled"]
+	},
+	{
 		"name": "Obelisk",
 		"culture": 2,
 		"science": 1,
@@ -87,10 +103,10 @@
 	{
 		"name": "Mage Tower",
 		"science": 2,
-		"specialistSlots": {"Scientist": 1},
+		"specialistSlots": {"Sage": 1},
 		"hurryCostModifier": 60,
 		"maintenance": 3,
-		"requiredTech": "Invocation",
+		"requiredTech": "The Weave",
 		"uniques": [ 
 			"[+2 Science] from [Runestone] tiles [in this city]",
 			"New [Magical] units start with [15] Experience [in this city]",
@@ -117,7 +133,7 @@
 		"specialistSlots": {"Merchant": 1},
 		"hurryCostModifier": 25,
 		"percentStatBonus": {"gold": 25},
-		"requiredTech": "Currency"
+		"requiredTech": "Trade"
 	},
 	{
 		"name": "Barracks",
@@ -145,7 +161,7 @@
 		"culture": 1,
 		"isNationalWonder": true,
 		"requiredResource": "Mana",
-		"greatPersonPoints": {"Great Scientist": 2},
+		"greatPersonPoints": {"Great Sage": 2},
         "uniques": ["[+10]% [Science] [in all cities]"],
 		"requiredTech": "The Weave",
 		"quote": "'It is not so much for its beauty that the forest makes a claim upon men's hearts, as for that subtle something, that quality of air, that emanation from old trees, that so wonderfully changes and renews a weary spirit.' - Robert Louis Stevenson"
@@ -165,7 +181,7 @@
 		"maintenance": 1,
 		"uniques": ["Must be next to [Coast]", "[+1 Food] from [Ocean] tiles [in this city]",
 			"[+1 Food] from [Coast] tiles [in this city]", "[+1 Food] from [Fish] tiles [in this city]" ],
-		"requiredTech": "Optics"
+		"requiredTech": "Astrolabe"
 	},
 	{
 		"name": "Stable",
@@ -177,7 +193,7 @@
 			"[+1 Production] from [Horses] tiles [in this city]",
 			"[+1 Production] from [Cattle] tiles [in this city]",
 			"[+1 Production] from [Sheep] tiles [in this city]"],
-		"requiredTech": "Animal Husbandry"
+		"requiredTech": "Beast Riding"
 	},
 	{
 		"name": "Catacombs",
@@ -219,7 +235,7 @@
 		"uniques": ["Must not be on [Plains]",
 			"[+1 Production] from [Stone] tiles [in this city]",
 			"[+1 Production] from [Marble] tiles [in this city]"],
-		"requiredTech": "Calendar"
+		"requiredTech": "Masonry"
 	},
 	{
 		"name": "Water Mill",
@@ -272,30 +288,9 @@
 		"uniques": ["Hidden when religion is disabled", "Destroyed when the city is captured"]
 	},
 	{
-		"name": "Mud Pyramid Mosque",
-		"replaces": "Temple",
-		"uniqueTo": "Songhai",
-		"maintenance": 0,
-		"hurryCostModifier": 25,
-		"culture": 2,
-		"faith": 2,
-		"requiredBuilding": "Shrine",
-		"requiredTech": "Philosophy"
-	},
-	{
-		"name": "National College",
-		"cost": 125,
-		"science": 3,
-		"culture": 1,
-		"isNationalWonder": true,
-		"percentStatBonus": {"science": 50},
-		"uniques": ["Requires a [Library] in all cities", "Cost increases by [30] per owned city"],
-		"requiredTech": "Philosophy"
-	},
-	{
 		"name": "The Oracle",
 		"culture": 3,
-		"greatPersonPoints": {"Great Scientist": 1},
+		"greatPersonPoints": {"Great Sage": 1},
 		"isWonder": true,
 		"uniques": ["Free Social Policy"],
 		"requiredTech": "Divination",
@@ -326,7 +321,7 @@
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
 		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
-		"requiredTech": "Metal Working",
+		"requiredTech": "Smithing",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
 
@@ -338,9 +333,8 @@
 		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
 		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"requiredTech": "Theology"
+		"requiredTech": "Natural Lore"
 	},
-
 	{
 		"name": "Workshop",
 		"maintenance": 2,
@@ -355,7 +349,7 @@
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"requiredNearbyImprovedResources": ["Iron"],
-		"requiredTech": "Metal Working",
+		"requiredTech": "Smithing",
 		"uniques": ["[+15]% Production when constructing [Spaceship part] units [in this city]",
 			"[+15]% Production when constructing [Land] units [in this city]",
 			"[+1 Production] from [Iron] tiles [in this city]"]

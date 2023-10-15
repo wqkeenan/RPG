@@ -41,7 +41,7 @@
 		"movement": 2,
 		"strength": 5,
 		"cost": 25,
-		"obsoleteTech": "Scientific Theory",
+		"obsoleteTech": "The Weave",
 		"uniques": ["May upgrade to [Archer] through ruins-like effects", "Never appears as a Barbarian unit"],
 		"promotions": ["Ignore terrain cost"],
 		"attackSound": "nonmetalhit"
@@ -67,6 +67,17 @@
 		"hurryCostModifier": 20,
 		"attackSound": "metalhit"
 	},
+	{
+		"name": "Horseman",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 8,
+		"cost": 55,
+		"requiredTech": "Horseback Riding",
+		"requiredResource": "Horses",
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	},
 	
 
 // Barbarian Units
@@ -78,7 +89,7 @@
 		"movement": 2,
 		"strength": 7,
 		"cost": 20,
-		"obsoleteTech": "Metal Casting",
+		"obsoleteTech": "Military Service",
 		"upgradesTo": "Zombies",
 		"uniques": [
         	"[+50]% Strength <vs Magical>",
@@ -114,12 +125,12 @@
 		"name": "Zombie",
 		"unitType": "Undead",
 		"uniqueTo": "Barbarians",
-		"replaces": "Spearman",
+		"replaces": "Swordsman",
 		"movement": 1,
 		"strength": 11,
 		"cost": 45,
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Metal Casting",
+		"requiredTech": "Military Service",
+		"obsoleteTech": "The Weave",
 		"upgradesTo": "Giant Boar",
 		"uniques": [
         	"No defensive terrain bonus",
@@ -136,14 +147,14 @@
 	},
  	{
 		"name": "Troglodyte",
-		"unitType": "monster",
+		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"replaces": "Chariot Archer",
+		"replaces": "War Elephant",
 		"movement": 2,
 		"strength": 12,
 		"cost": 50,
-		"requiredTech": "Mathematics",
-		"obsoleteTech": "Metal Casting",
+		"requiredTech": "Smithing",
+		"obsoleteTech": "The Weave",
 		"upgradesTo": "Gryphon",
 		"uniques": [
         	"[+33]% Strength <vs Mounted>",
@@ -162,7 +173,8 @@
 		"movement": 2,
 		"strength": 15,
 		"cost": 75,
-		"uniques": [
+		"requiredTech": "Horseback Riding",
+		"uniques": [ 
         	"[+50]% Strength <vs cities> <when defending>",
         	"No movement cost to pillage",
         	"Ignores terrain cost",
@@ -170,17 +182,18 @@
  	       	],
 		"attackSound": "monster",
 		  "civilopediaText": [
-            { "text": "A pack of these oversized wolves can tear a band of soldiers to pieces." }
+            { "text": "A pack of these oversized wolves can tear a company of soldiers to pieces." }
             ]
 	},
     {
 		"name": "Giant Boar",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Wildman",
+	//	"replaces": "Wildman",
 		"movement": 2,
 		"strength": 14,
 		"cost": 70,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"[+50]% Strength <vs cities> <when defending>",
         	"No movement cost to pillage",
@@ -196,12 +209,12 @@
 		"name": "Manticore",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"replaces": "Goblin Mob",
 		"movement": 3,
 		"strength": 20,
 		"rangedStrength": 12,
 		"range": 1,
 		"cost": 100,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"No defensive terrain bonus",
         	"No defensive terrain penalty",
@@ -219,10 +232,11 @@
 		"name": "Owlbear",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Troglodyte",
+	//	"replaces": "Troglodyte",
 		"movement": 2,
 		"strength": 21,
 		"cost": 120,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"[+50]% Strength <vs cities> <when defending>",
         	"May withdraw before melee ([30]%)",
@@ -239,10 +253,11 @@
 		"name": "Gryphon",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Dire Wolf",
+	//	"replaces": "Dire Wolf",
 		"movement": 4,
 		"strength": 28,
 		"cost": 150,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"[+100]% Strength <vs [Melee] units> <when defending>",
         	"[+200]% Strength <vs cities> <when defending>",
@@ -263,10 +278,11 @@
 		"name": "Orge",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"replaces": "Giant Boar",
+//		"replaces": "Giant Boar",
 		"movement": 3,
 		"strength": 26,
 		"cost": 150,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"No defensive terrain bonus",
         	"Double movement in [Hills]",
@@ -283,10 +299,11 @@
 		"name": "Owlbear II",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Owlbear",
+//		"replaces": "Owlbear",
 		"movement": 2,
 		"strength": 22,
 		"cost": 120,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"[+50]% Strength <vs cities> <when defending>",
         	"May withdraw before melee ([30]%)",
@@ -303,12 +320,13 @@
 		"name": "Wright",
 		"unitType": "Undead",
 		"uniqueTo": "Barbarians",
-		"replaces": "Owlbear",
+//		"replaces": "Owlbear",
 		"movement": 1,
 		"strength": 24,
 		"rangedStrength": 18,
 		"range": 1,
 		"cost": 45,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"No defensive terrain bonus",
         	"Ignores terrain cost",
@@ -328,10 +346,11 @@
 		"name": "Gryphon II",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Gryphon",
+//		"replaces": "Gryphon",
 		"movement": 4,
 		"strength": 28,
 		"cost": 150,
+		"requiredTech": "The Weave",
 		"uniques": [
         	"[+100]% Strength <vs [Melee] units> <when defending>",
         	"[+200]% Strength <vs cities> <when defending>",
@@ -352,12 +371,13 @@
 		"name": "Dragon",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"replaces": "Gryphon II",
+//		"replaces": "Gryphon II",
 		"movement": 6,
 		"strength": 160,
 		"rangedStrength": 140,
 		"range": 1,
 		"cost": 750,
+		"requiredTech": "The Weave",
 		"uniques": [
             "Destroys tile improvements when attacking",
             "[+50]% Strength <vs [Ranged] units> <when defending>",
@@ -390,7 +410,7 @@
 		"requiredTech": "The Weave",
 		"requiredResource": "Mana",
 		"obsoleteTech": "",
-		"upgradesTo": "Mage",
+//		"upgradesTo": "Mage",
 		"uniques": ["[+50]% Strength <vs cities> <when attacking>", 
 		     "No defensive terrain bonus",
 			 "Never appears as a Barbarian unit"
@@ -432,8 +452,9 @@
 	},
 	{
 		"name": "Ranger",
-		"replaces": "Scout",
 		"unitType": "Heroic",
+		"replaces": "Scout",
+		"uniqueTo": "major",
 		"movement": 3,
 		"strength": 5,
 		"cost": 50,
@@ -454,9 +475,6 @@
 		"upgradesTo": "Legend",
         "promotions": ["Ranger", "Dungeoneer"],
         "uniques": [
-		          "May heal outside of friendly territory", 
-		          "Damage is ignored when determining unit Strength",
-		          "No defensive terrain bonus", 
 		          "Never appears as a Barbarian unit"],
 		"attackSound": "metalhit"
 	},
@@ -468,11 +486,8 @@
 		"cost": 480,
 		"requiredTech": "Bardic Tales",
 		"requiredResource": "Mead",
-        "promotions": ["Fighter"],
+        "promotions": ["Ranger", "Dungeoneer"],
 		"uniques": [
-		          "May heal outside of friendly territory", 
-		          "Damage is ignored when determining unit Strength",
-		          "No defensive terrain bonus", 
 		          "Never appears as a Barbarian unit"
 				],
 		"attackSound": "metalhit"
@@ -488,8 +503,7 @@
 		"rangedStrength": 7,
 		"cost": 40,
 		"requiredTech": "Archery",
-		"obsoleteTech": "Machinery",
-		"upgradesTo": "Crossbowman",
+		"obsoleteTech": "The Weave",
 		"attackSound": "arrow"
 	},
 	{
@@ -528,7 +542,7 @@
 		"cost": 75,
 		"requiredTech": "Mathematics",
 		"requiredResource": "Iron",
-		"obsoleteTech": "Physics",
+		"obsoleteTech": "The Weave",
 		"upgradesTo": "Ballista",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
 			"Must set up to ranged attack", "[-1] Sight", "Never appears as a Barbarian unit"],
@@ -538,7 +552,6 @@
 	{
 		"name": "Ballista",
 		"unitType": "Siege",
-		"replaces": "Catapult",
 		"movement": 2,
 		"strength": 8,
 		"rangedStrength": 10,
@@ -597,18 +610,6 @@
 
 
 	// Rennaisance Era
-
-	{
-		"name": "Caravel",
-		"unitType": "Melee Water",
-		"movement": 4,
-		"strength": 20,
-		"cost": 120,
-		"requiredTech": "Sailing",
-		"uniques": ["[+1] Sight", "May withdraw before melee ([80]%)"],
-		"hurryCostModifier": 30,
-		"attackSound": "cannon"
-	},
 
 
 	// Information Era
