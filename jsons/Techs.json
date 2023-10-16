@@ -30,12 +30,12 @@
 			},
 			{
 				"name": "Mythology",
-				"row": 5,
+				"row": 7,
 				"uniques": ["Starting tech"]
 			},	
 			{
 				"name": "Tradition",
-				"row": 7,
+				"row": 6,
 				"uniques": ["Starting tech"]
 			},
 
@@ -55,13 +55,19 @@
 		"techs": [
 			{
 				"name": "Runology",
-				"row": 6,
+				"row": 9,
 				"prerequisites": ["Mythology"],
 				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
 			},
 			{
-				"name": "Agriculture",
+				"name": "Astrology",
 				"row": 8,
+				"prerequisites": ["Mythology","Tradition"],
+				"quote": ""
+			},
+			{
+				"name": "Agriculture",
+				"row": 6,
 				"prerequisites": ["Tradition","Craft"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster"
 			},
@@ -87,34 +93,56 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Astrology",
-				"row": 7,
-				"prerequisites": ["Mythology","Tradition"],
+				"name": "Metal Working",
+				"row": 1,
+				"prerequisites": ["Mining"],
+				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
+			},		
+			{
+				"name": "Masonry",
+				"row": 3,
+				"prerequisites": ["Mining"],
+				"quote": ""
+			},			
+			{
+				"name": "Archery",
+				"row": 4,
+				"prerequisites": ["Hunting"],
+				"quote": ""
+			},			
+			{
+				"name": "Animal Husbandry",
+				"row": 6,
+				"prerequisites": ["Hunting"],
 				"quote": ""
 			},
 			{
 				"name": "Shamanism",
-				"row": 5,
+				"row": 7,
 				"prerequisites": ["Mythology","Hunting"],
 				"quote": ""
 			},
 			{
 				"name": "Pottery",
-				"row": 9,
+				"row": 8,
 				"prerequisites": ["Agriculture"],
 				"quote": ""
 			}
-		
 		]
 	},
-
 	{
-		"columnNumber": 5,
+		"columnNumber": 6,
 		"era": "Age of Discovery",
 		"techCost": 35,
 		"buildingCost": 60,
 		"wonderCost": 185,
 		"techs": [
+			{
+				"name": "Elvish",
+				"row": 10,
+				"prerequisites": ["Linguistics"],
+				"quote": "The ancient language of the Elves has it roots in the language in Draconic. "
+			},
 			{
 				"name": "Ritual",
 				"row": 1,
@@ -135,72 +163,7 @@
 			}			
 		]
 	},
-	{
-		"columnNumber": 6,
-		"era": "Age of Discovery",
-		"techCost": 35,
-		"buildingCost": 60,
-		"wonderCost": 185,
-		"techs": [
-			{
-				"name": "Metal Working",
-				"row": 1,
-				"prerequisites": ["Mining"],
-				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
-			},		
-			{
-				"name": "Masonry",
-				"row": 3,
-				"prerequisites": ["Mining"],
-				"quote": ""
-			},			
-			{
-				"name": "Archery",
-				"row": 5,
-				"prerequisites": ["Hunting"],
-				"quote": ""
-			},			
-			{
-				"name": "Animal Husbandry",
-				"row": 7,
-				"prerequisites": ["Hunting"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 8,
-		"era": "Age of Discovery",
-		"techCost": 35,
-		"buildingCost": 60,
-		"wonderCost": 185,
-		"techs": [
-			{
-				"name": "Elvish",
-				"row": 2,
-				"prerequisites": ["Linguistics"],
-				"quote": "The ancient language of the Elves has it roots in the language in Draconic. "
-			},
-			{
-				"name": "Dwarvish",
-				"row": 4,
-				"prerequisites": ["Linguistics"],
-				"quote": "One cannot master the language of the Dwarves without first understanding stone and metal."
-			},
-			{
-				"name": "Ghukliak",
-				"row": 8,
-				"prerequisites": ["Linguistics"],
-				"quote": "In the language of goblins, every word is four letters."
-			},
-			{
-				"name": "Jogishk",
-				"row": 6,
-				"prerequisites": ["Linguistics"],
-				"quote": "The laguage of Ogres."
-			}
-		]
-	},
+
 	{
 		"columnNumber": 9,
 		"era": "Age of Discovery",
