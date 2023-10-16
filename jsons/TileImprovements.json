@@ -42,7 +42,7 @@
 		"terrainsCanBeBuiltOn": ["Plains","Grassland","Desert","Hill","Tundra","Forest","Jungle","Flood plains"],
 		"gold": 1,
 		"turnsToBuild": 7,
-		"techRequired": "Beast Riding",
+		"techRequired": "Animal Husbandry",
 		"uniques": ["[+1 Gold] <after discovering [Trade]>", "Pillaging this improvement yields approximately [+20 Gold]"],
 		"shortcutKey": "T"
 	},
