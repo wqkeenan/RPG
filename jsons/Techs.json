@@ -29,18 +29,19 @@
 				"uniques": ["Only available <before discovering [Is AI]>"]
 			},
 			{
+				"name": "Mythology",
+				"row": 4,
+				"uniques": ["Starting tech"]
+			},	
+			{
 				"name": "Tradition",
 				"row": 5,
 				"uniques": ["Starting tech"]
 			},
-			{
-				"name": "Mythology",
-				"row": 6,
-				"uniques": ["Starting tech"]
-			},
+
 			{
 				"name": "Craft",
-				"row": 8,
+				"row": 9,
 				"uniques": ["Starting tech"]
 			}
 		]
@@ -53,21 +54,27 @@
 		"wonderCost": 185,
 		"techs": [
 			{
+				"name": "Runology",
+				"row": 1,
+				"prerequisites": ["Mythology"],
+				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
+			},
+			{
 				"name": "Agriculture",
-				"row": 2,
-				"prerequisites": ["Tradition"],
+				"row": 5,
+				"prerequisites": ["Tradition","Craft"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster"
 			},
 			{
 				"name": "Hunting",
-				"row": 4,
-				"prerequisites": ["Tradition"],
+				"row": 8,
+				"prerequisites": ["Craft"],
 				"quote": ""
 			},
 			{
 				"name": "Mining",
-				"row": 6,
-				"prerequisites": ["Tradition"],
+				"row": 10,
+				"prerequisites": ["TCraft"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			}
 		]
@@ -80,26 +87,21 @@
 		"wonderCost": 185,
 		"techs": [
 			{
-				"name": "Runology",
-				"row": 1,
-				"prerequisites": ["Mythology"],
-				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
-			},
-			{
 				"name": "Astrology",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Mythology","Tradition"],
 				"quote": ""
-			},			
+			},
 			{
 				"name": "Shamanism",
 				"row": 8,
 				"prerequisites": ["Mythology","Hunting"],
 				"quote": ""
 			}
-
+		
 		]
 	},
+
 	{
 		"columnNumber": 5,
 		"era": "Age of Discovery",
