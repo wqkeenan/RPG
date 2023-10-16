@@ -262,7 +262,7 @@
 		"name": "Nonmagical Resistance",
 		"prerequisites": ["Innate"],
 		"uniques": [
-			"[+25]% Strength <vs [Sword Gunpowder Mounted Scout Siege Beast] units> <when defending>",
+			"[+25]% Strength <vs [Sword  Mounted Scout Siege Beast] units> <when defending>",
         	"[+75]% Strength <vs [Archery] units> <when defending>",
         	"[+100]% Strength <vs cities> <when defending>"
 			],
@@ -273,36 +273,36 @@
 	{
 		"name": "Accuracy I",
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Accuracy II",
 		"prerequisites": ["Accuracy I"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Accuracy III",
 		"prerequisites": ["Accuracy II"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Barrage I",
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Barrage II",
 		"prerequisites": ["Barrage I"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Barrage III",
 		"prerequisites": ["Barrage II"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"],
-		"unitTypes": ["Siege","Archery","Ranged Gunpowder"]
+		"unitTypes": ["Siege","Archery"]
 	},
 	{
 		"name": "Volley",
@@ -345,37 +345,37 @@
 		"name": "Elite",
 		"prerequisites": ["Veteran III","Shock II","Mountaineer II"],
 		"uniques": ["[1] additional attacks per turn"],
-		"unitTypes": ["Sword","Mounted","Armored"]
+		"unitTypes": ["Sword","Mounted"]
 	},
 	{
 		"name": "Mountaineer I",
 		"prerequisites": ["Veteran I"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
-		"unitTypes": ["Sword","Mounted","Armored"]
+		"unitTypes": ["Sword","Mounted"]
 	},
 	{
 		"name": "Mountaineer II",
 		"prerequisites": ["Mountaineer I"],
 		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
-		"unitTypes": ["Sword","Mounted","Armored"]
+		"unitTypes": ["Sword","Mounted"]
 	},
 	{
 		"name": "Shock I",
 		"prerequisites": ["Veteran I"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Sword","Mounted","Armored"]
+		"unitTypes": ["Sword","Mounted"]
 	},
 	{
 		"name": "Shock II",
 		"prerequisites": ["Shock I"],
 		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"],
-		"unitTypes": ["Sword","Mounted","Armored"]
+		"unitTypes": ["Sword","Mounted"]
 	},
 	{
 		"name": "Overrun",
 		"prerequisites": ["Veteran I"],
 		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
-		"unitTypes": ["Mounted","Armored"]
+		"unitTypes": ["Mounted"]
 	},
 	{
 		"name": "Besiege I", // Not called "Siege" in order to not conflict with siege type units for translations
@@ -387,7 +387,7 @@
 		"name": "Besiege II", // Not called "Siege" in order to not conflict with siege type units for translations
 		"prerequisites": ["Besiege I"],
 		"uniques": ["[+33]% Strength <vs cities>"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword"]
 	},
 	{
 		"name": "Formation I",
@@ -405,13 +405,13 @@
 		"name": "Woodsman",
 		"prerequisites": ["Shock III","Drill III"],
 		"uniques": ["Double movement in [Forest]","Double movement in [Jungle]"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword"]
 	},
 	{
 		"name": "Amphibious",
 		"prerequisites": ["Shock I", "Drill I"],
 		"uniques": ["Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"],
-		"unitTypes": ["Sword","Gunpowder"]
+		"unitTypes": ["Sword"]
 	},
 	{
 		"name": "Medic",
@@ -692,13 +692,13 @@
 	},
 	{
 		"name": "Anti-Armor I",
-		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"uniques": ["[+25]% Strength <vs [] units>"],
 		"unitTypes": ["Helicopter"]
 	},
 	{
 		"name": "Anti-Armor II",
 		"prerequisites": ["Anti-Armor I"],
-		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"uniques": ["[+25]% Strength <vs [] units>"],
 		"unitTypes": ["Helicopter"]
 	},
 
@@ -744,13 +744,13 @@
 
 	{
 		"name": "Ambush I",
-		"uniques": ["[+33]% Strength <vs [Armored] units>"],
+		"uniques": ["[+33]% Strength <vs [] units>"],
 		"unitTypes": ["Sword","Fighter","Bomber"]
 	},
 	{
 		"name": "Ambush II",
 		"prerequisites": ["Ambush I"],
-		"uniques": ["[+33]% Strength <vs [Armored] units>"],
+		"uniques": ["[+33]% Strength <vs [] units>"],
 		"unitTypes": ["Sword","Fighter","Bomber"]
 	},
 

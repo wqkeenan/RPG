@@ -307,7 +307,6 @@
         	"[+50]% Strength <vs cities> <when defending>",
         	"May withdraw before melee ([30]%)",
         	"Invisible to non-adjacent units",
-            "Double movement in [Forest Jungle]",
         	"Unable to capture cities"
  	       	],
 		"attackSound": "monster",
