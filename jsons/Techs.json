@@ -8,7 +8,7 @@
 		"techs": [
  			{
 				"name": "Is AI",
-				"row": 10,
+				"row": 8,
 				"quote": "A tech given to the AI to limit is research tree.",
 				"uniques": [
 					"Only available <after discovering [Is AI]>",
@@ -25,7 +25,7 @@
 			},
 			{
 				"name": "Linguistics",
-				"row": 8,
+				"row": 10,
 				"uniques": ["Only available <before discovering [Is AI]>"]
 			},
 			{
@@ -55,7 +55,7 @@
 		"techs": [
 			{
 				"name": "Runology",
-				"row": 5,
+				"row": 6,
 				"prerequisites": ["Mythology"],
 				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
 			},
@@ -67,7 +67,7 @@
 			},
 			{
 				"name": "Hunting",
-				"row": 5,
+				"row": 4,
 				"prerequisites": ["Craft"],
 				"quote": ""
 			},
