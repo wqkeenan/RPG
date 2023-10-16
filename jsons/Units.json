@@ -92,7 +92,7 @@
 		"obsoleteTech": "Military Service",
 		"upgradesTo": "Zombie",
 		"uniques": [
-        	"[+50]% Strength <vs Magical>",
+        	"[+50]% Strength <vs [Magical] units>",
         	"Can move immediately once bought"
  	       	],
 		"attackSound": "nonmetalhit",
@@ -157,7 +157,7 @@
 		"obsoleteTech": "The Weave",
 		"upgradesTo": "Gryphon",
 		"uniques": [
-        	"[+33]% Strength <vs Mounted>",
+        	"[+33]% Strength <vs [Mounted] units>",
         	"Can move immediately once bought"
  	       	],
 		"attackSound": "nonmetalhit",
@@ -241,7 +241,6 @@
         	"[+50]% Strength <vs cities> <when defending>",
         	"May withdraw before melee ([30]%)",
         	"Invisible to non-adjacent units",
-            "Double movement in [Forest Jungle]",
         	"Unable to capture cities"
  	       	],
 		"attackSound": "monster",
@@ -285,7 +284,7 @@
 		"requiredTech": "The Weave",
 		"uniques": [
         	"No defensive terrain bonus",
-        	"Double movement in [Hills]",
+        	"Double movement in [Rough terrain]",
         	"[+100]% Strength <vs cities>",
         	"Ignores Zone of Control",
         	"Can move immediately once bought"
@@ -569,7 +568,7 @@
 		"movement": 4,
 		"cost": 30,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources",
+		"uniques": ["Cannot enter ocean tiles <before discovering [Astrolabe]>", "May create improvements on water resources",
             "Uncapturable", "Automation is a primary action"]
 	},
 	{

@@ -105,7 +105,7 @@
 	{
 		"name": "Bone",
 		"resourceType": "Strategic",
-		"revealedBy": "Necromany",
+		"revealedBy": "Necromancy",
 		"gold": 2,
 		"uniques": ["Doesn't generate naturally"]
 	},
