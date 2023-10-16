@@ -8,7 +8,7 @@
 		"techs": [
  			{
 				"name": "Is AI",
-				"row": 1,
+				"row": 10,
 				"quote": "A tech given to the AI to limit is research tree.",
 				"uniques": [
 					"Only available <after discovering [Is AI]>",
@@ -17,7 +17,7 @@
 			},
 			{
 				"name": "Dark Tome",
-				"row": 2,
+				"row": 1,
 				"quote": "You found a Dark Tome of Abyssal origin. ",
 				"uniques": [
 					"Only available <after discovering [Dark Tome]>"
@@ -25,12 +25,12 @@
 			},
 			{
 				"name": "Linguistics",
-				"row": 3,
+				"row": 2,
 				"uniques": ["Only available <before discovering [Is AI]>"]
 			},
 			{
 				"name": "Mythology",
-				"row": 4,
+				"row": 3,
 				"uniques": ["Starting tech"]
 			},	
 			{
@@ -55,7 +55,7 @@
 		"techs": [
 			{
 				"name": "Runology",
-				"row": 1,
+				"row": 2,
 				"prerequisites": ["Mythology"],
 				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
 			},
@@ -74,7 +74,7 @@
 			{
 				"name": "Mining",
 				"row": 10,
-				"prerequisites": ["TCraft"],
+				"prerequisites": ["Craft"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			}
 		]
