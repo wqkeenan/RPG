@@ -17,7 +17,7 @@
 			},
 			{
 				"name": "Dark Tome",
-				"row": 1,
+				"row": 9,
 				"quote": "You found a Dark Tome of Abyssal origin. ",
 				"uniques": [
 					"Only available <after discovering [Dark Tome]>"
@@ -25,23 +25,23 @@
 			},
 			{
 				"name": "Linguistics",
-				"row": 2,
+				"row": 8,
 				"uniques": ["Only available <before discovering [Is AI]>"]
 			},
 			{
 				"name": "Mythology",
-				"row": 3,
+				"row": 5,
 				"uniques": ["Starting tech"]
 			},	
 			{
 				"name": "Tradition",
-				"row": 5,
+				"row": 7,
 				"uniques": ["Starting tech"]
 			},
 
 			{
 				"name": "Craft",
-				"row": 9,
+				"row": 3,
 				"uniques": ["Starting tech"]
 			}
 		]
@@ -55,25 +55,25 @@
 		"techs": [
 			{
 				"name": "Runology",
-				"row": 2,
+				"row": 5,
 				"prerequisites": ["Mythology"],
 				"quote": "The ancient language of the Dragons is also the language of the rune stones and of magic itself."
 			},
 			{
 				"name": "Agriculture",
-				"row": 5,
+				"row": 8,
 				"prerequisites": ["Tradition","Craft"],
 				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster"
 			},
 			{
 				"name": "Hunting",
-				"row": 8,
+				"row": 5,
 				"prerequisites": ["Craft"],
 				"quote": ""
 			},
 			{
 				"name": "Mining",
-				"row": 10,
+				"row": 2,
 				"prerequisites": ["Craft"],
 				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
 			}
@@ -88,14 +88,20 @@
 		"techs": [
 			{
 				"name": "Astrology",
-				"row": 4,
+				"row": 7,
 				"prerequisites": ["Mythology","Tradition"],
 				"quote": ""
 			},
 			{
 				"name": "Shamanism",
-				"row": 8,
+				"row": 5,
 				"prerequisites": ["Mythology","Hunting"],
+				"quote": ""
+			},
+			{
+				"name": "Pottery",
+				"row": 9,
+				"prerequisites": ["Agriculture"],
 				"quote": ""
 			}
 		
@@ -126,14 +132,7 @@
 				"row": 5,
 				"prerequisites": ["Mythology","Astrology"],
 				"quote": ""
-			},			
-			{
-				"name": "Pottery",
-				"row": 7,
-				"prerequisites": ["Agriculture"],
-				"quote": ""
-			}
-
+			}			
 		]
 	},
 	{
