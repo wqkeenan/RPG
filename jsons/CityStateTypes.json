@@ -35,7 +35,7 @@
     {
         "name": "Religious",
         "friendBonusUniques":  [
-            "[+3 Faith]>"
+            "[+3 Faith]"
         ],
         "allyBonusUniques":  [
             "[+6 Faith]"
