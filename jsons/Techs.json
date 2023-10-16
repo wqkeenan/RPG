@@ -264,6 +264,12 @@
 				"row": 9,
 				"prerequisites": ["Animal Husbandry","Astrology"],
 				"quote": ""
+			},			
+			{
+				"name": "Beast Handling",
+				"row": 10,
+				"prerequisites": ["Shamanism","Animal Husbandry"],
+				"quote": ""
 			}
 
 		]
@@ -349,14 +355,26 @@
 			},
 			{
 				"name": "Gem Cutting",
-				"row": 1,
+				"row": 3,
 				"prerequisites": ["Trade", "Smithing"],
 				"quote": ""
 			},
 			{
 				"name": "Bardic Tales",
-				"row": 1,
+				"row": 5,
 				"prerequisites": ["Stringed Instruments", "Trade"],
+				"quote": ""
+			},
+			{
+				"name": "Trade",
+				"row": 7,
+				"prerequisites": ["Mathematics", "Astrolabe"],
+				"quote": ""
+			},
+			{
+				"name": "Necromancy",
+				"row": 9,
+				"prerequisites": ["The Weave"],
 				"quote": ""
 			}
 

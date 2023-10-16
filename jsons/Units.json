@@ -90,7 +90,7 @@
 		"strength": 7,
 		"cost": 20,
 		"obsoleteTech": "Military Service",
-		"upgradesTo": "Zombies",
+		"upgradesTo": "Zombie",
 		"uniques": [
         	"[+50]% Strength <vs Magical>",
         	"Can move immediately once bought"
@@ -111,7 +111,7 @@
 		"range": 1,
 		"cost": 35,
 		"requiredTech": "Mathematics",
-		"obsoleteTech": "Metal Casting",
+		"obsoleteTech": "The Weave",
 		"upgradesTo": "Manticore",
 		"uniques": [
         	"Can move immediately once bought"
@@ -409,7 +409,7 @@
 		"cost": 200,
 		"requiredTech": "The Weave",
 		"requiredResource": "Mana",
-		"obsoleteTech": "",
+//		"obsoleteTech": "",
 //		"upgradesTo": "Mage",
 		"uniques": ["[+50]% Strength <vs cities> <when attacking>", 
 		     "No defensive terrain bonus",
@@ -557,7 +557,7 @@
 		"rangedStrength": 10,
 		"cost": 75,
 		"requiredResource": "Iron",
-		"requiredTech": "Mathematics",
+		"requiredTech": "The Weave",
 		"uniques": ["[+200]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
 			"Must set up to ranged attack", "[-1] Sight"],
 		"hurryCostModifier": 20,
