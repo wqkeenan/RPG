@@ -105,34 +105,7 @@
 		"gold": 2,
 		"uniques": ["Doesn't generate naturally"]
 	},
-	{
-		"name": "Dungeon",
-		"resourceType": "Bonus",
-		"revealedBy": "Runology",
-		"terrainsCanBeFoundOn": ["Grassland","Plains","Desert","Tundra","Snow","Hill","Marsh"],
-		"production": 1,
-		"science": 1,
-		"happiness": -1,
-		"uniques": [
-			"Generated with weight [45] <in [Featureless] [Tundra] tiles>",
-			"Generated with weight [25] <in [Featureless] [Snow] tiles>",
-			"Generated with weight [25] <in [Featureless] [Grassland] tiles>",
-			"Generated with weight [25] <in [Featureless] [Plains] tiles>",
-			"Generated with weight [35] <in [Featureless] [Desert] tiles>",
-			"Generated with weight [30] <in [Hill] tiles>",
-			"Minor deposits generated with weight [30] <in [Marsh] tiles> <in tiles without [Hill]>",
-			"Minor deposits generated with weight [10] <in [Jungle] [Hill] tiles>",
-			"Minor deposits generated with weight [35] <in [Forest] tiles>",
-			"Minor deposits generated with weight [10] <in [Hill] tiles> <in tiles without [Forest]> <in tiles without [Jungle]>",
-			"Minor deposits generated with weight [30] <in [Featureless] [Grassland] tiles> <in tiles without [Fresh Water]>",
-			"Minor deposits generated with weight [20] <in [Featureless] [Plains] tiles>",
-			"Minor deposits generated with weight [20] <in [Featureless] [Desert] tiles>",
-			"Minor deposits generated with weight [15] <in [Featureless] [Tundra] tiles>",
-			"Minor deposits generated with weight [10] <in [Featureless] [Snow] tiles>"
-		],
-		"majorDepositAmount": {"sparse": 4, "default": 6, "abundant": 9},
-		"minorDepositAmount": {"sparse": 1, "default": 2, "abundant": 3}
-	},
+
 	{
 		"name": "Mana",
 		"resourceType": "Strategic",
