@@ -48,9 +48,9 @@
 		"maintenance": 1,
 		"requiredTech": "Gem Cutting",
 		"uniques": [ 
-			"[+1 Happiness] from every [Gems] tiles <in this city>",
-			"[+1 Gold] from every [Gold Ore] tiles <in this city>",
-			"[+1 Gold] from every [Silver] tiles <in this city>",
+			"[+1 Happiness] from [Gems] tiles [in this city]",
+			"[+1 Gold] from [Gold Ore] tiles [in this city]",
+			"[+1 Gold] from [Silver] tiles [in this city]",
 			"Doubles Gold given to enemy if city is captured",
 			"Destroyed when the city is captured"
 			]
@@ -68,9 +68,9 @@
 			"Provides [1] [Mead]",
 			"[+1 Happiness] <after discovering [Stringed Instruments]>",
 			"[+2 Culture] <after discovering [Bardic Tales]>",
-			"[+1 Gold] from every [Honey] tiles <in this city>",
-			"[+1 Gold] from every [Wine] tiles <in this city>",
-			"New [Heroic] units start with [15] Experience <in this city> <after discovering [Bardic Tales]>",
+			"[+1 Gold] from [Honey] tiles [in this city]",
+			"[+1 Gold] from [Wine] tiles [in this city]",
+			"New [Heroic] units start with [15] Experience [in this city] <after discovering [Bardic Tales]>",
 			"Destroyed when the city is captured"
 			]
 	},
@@ -83,7 +83,7 @@
 		"requiredTech": "Smithing",
 		"uniques": [ 
 			"[Mounted] Units adjacent to this city heal [5] HP per turn when healing",
-			"[+1 Production] from every [Iron] tiles <in this city>"
+			"[+1 Production] from [Iron] tiles [in this city]"
 			]
 	},
 	{
@@ -95,10 +95,10 @@
 		"requiredBuilding": "Barracks",
 		"uniques": [ 
 			"[Archery] Units adjacent to this city heal [5] HP per turn when healing",
-			"New [Sword] units start with [15] Experience <in this city>",
-			"New [Mounted] units start with [15] Experience <in this city>",
-			"New [Scout] units start with [15] Experience <in this city>",
-			"New [Archery] units start with [15] Experience <in this city>",
+			"New [Sword] units start with [15] Experience [in this city]",
+			"New [Mounted] units start with [15] Experience [in this city]",
+			"New [Scout] units start with [15] Experience [in this city]",
+			"New [Archery] units start with [15] Experience [in this city]",
 			"Destroyed when the city is captured"	
 			]
 	},
@@ -111,8 +111,8 @@
 		"maintenance": 3,
 		"requiredTech": "The Weave",
 		"uniques": [ 
-			"[+2 Science] from [Mana] tiles <in this city>",
-			"New [Magical] units start with [15] Experience <in this city>",
+			"[+2 Science] from [Mana] tiles [in this city]",
+			"New [Magical] units start with [15] Experience [in this city]",
 			"[Magical] Units adjacent to this city heal [5] HP per turn when healing",
 			"Destroyed when the city is captured"	
 			]
@@ -123,9 +123,9 @@
 		"maintenance": 1,
 		"hurryCostModifier": 25,
 		"uniques": [
-			"[+1 Food] from [Deer] tiles <in this city>",
-			"[+1 Food] from [Bananas] tiles <in this city>",
-			"[+1 Food] from [Wheat] tiles <in this city>"
+			"[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"
 			],
 		"requiredTech": "Pottery"
 	},
@@ -143,7 +143,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"uniques": [
-			"New [Military] units start with [15] Experience <in this city>",
+			"New [Military] units start with [15] Experience [in this city]",
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Military Service"
@@ -153,7 +153,7 @@
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"uniques": [
-			"New [Magical] units start with [15] Experience <in this city>", 
+			"New [Magical] units start with [15] Experience [in this city]", 
 			"Destroyed when the city is captured"
 		],
 		"requiredTech": "Military Service"
@@ -162,7 +162,7 @@
 		"name": "Library",
 		"hurryCostModifier": 25,
 		"maintenance": 1,
-		"uniques": ["[+1 Science] per [2] population <in this city>"],
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
 		"requiredTech": "Elvish"
 	},
 	{
@@ -190,9 +190,9 @@
 		"maintenance": 1,
 		"uniques": [
 			"Must be next to [Coast]", 
-			"[+1 Food] from [Ocean] tiles <in this city>",
-			"[+1 Food] from [Coast] tiles <in this city>", 
-			"[+1 Food] from [Fish] tiles <in this city>" 
+			"[+1 Food] from [Ocean] tiles [in this city]",
+			"[+1 Food] from [Coast] tiles [in this city]", 
+			"[+1 Food] from [Fish] tiles [in this city]" 
 		],
 		"requiredTech": "Astrolabe"
 	},
@@ -202,16 +202,16 @@
 		"requiredNearbyImprovedResources": ["Horses","Sheep","Cattle"],
 		"hurryCostModifier": 25,
 		"uniques": [
-			"[+15]% Production when constructing [Mounted] units <in this city>",
-			"[+1 Production] from [Horses] tiles <in this city>",
-			"[+1 Production] from [Cattle] tiles <in this city>",
-			"[+1 Production] from [Sheep] tiles <in this city>"],
+			"[+15]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Cattle] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]"],
 		"requiredTech": "Animal Husbandry"
 	},
 	{
 		"name": "Catacombs",
 		"maintenance": 0,
-		"uniques": [ "[+15]% Production when constructing [Undead] units <in this city>"],
+		"uniques": [ "[+15]% Production when constructing [Undead] units [in this city]"],
 		"happiness": 2,
 		"requiredBuilding": "Shrine",
 		"hurryCostModifier": 25,
@@ -220,7 +220,7 @@
 	{
 		"name": "Arena",
 		"maintenance": 1,
-		"uniques": [ "[+15]% Production when constructing [Beast] units <in this city>"],
+		"uniques": [ "[+15]% Production when constructing [Beast] units [in this city]"],
 		"happiness": 2,
 		"hurryCostModifier": 25,
 		"requiredTech": "Construction"
@@ -234,8 +234,8 @@
 		"isWonder": true,
 		"uniques": [
 			"Provides [1] [Mead]", 
-			"Gain a free [Tavern] <in this city>",
-			"New [Heroic] units start with [15] Experience <in this city>"],
+			"Gain a free [Tavern] [in this city]",
+			"New [Heroic] units start with [15] Experience [in this city]"],
 		"requiredTech": "Bardic Tales",
 		"quote": "From everywhere adventurers are attracted to this legendary inn attracts to share experience, recruit, and of course, drink mead."
 	},
@@ -250,8 +250,8 @@
 		"hurryCostModifier": 0,
 		"uniques": [
 			"Must not be on [Plains]",
-			"[+1 Production] from [Stone] tiles <in this city>",
-			"[+1 Production] from [Marble] tiles <in this city>"
+			"[+1 Production] from [Stone] tiles [in this city]",
+			"[+1 Production] from [Marble] tiles [in this city]"
 		],
 		"requiredTech": "Masonry"
 	},
@@ -284,7 +284,7 @@
 		"culture": 1,
 		"isWonder": true,
 		"requiredTech": "Mathematics",
-		"uniques": ["Gain a free [Garden] <in this city>"],
+		"uniques": ["Gain a free [Garden] [in this city]"],
 		"quote": "'I think that if ever a mortal heard the word of God it would be in a garden at the cool of the day.' - F. Frankfort Moore"
 	},
 	{
@@ -328,7 +328,7 @@
 		"name": "Aqueduct",
 		"maintenance": 1,
 		"hurryCostModifier": 0,
-		"uniques": ["[40]% Food is carried over after population increases <in this city>"],
+		"uniques": ["[40]% Food is carried over after population increases [in this city]"],
 		"requiredTech": "Engineering"
 	},
 	{
@@ -338,7 +338,7 @@
 		"gold": 5,
 		"greatPersonPoints": {"Great Merchant": 1},
 		"isWonder": true,
-		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles <in this city>"],
+		"uniques": ["Must be next to [Coast]", "[+1 Gold] from [Water] tiles [in this city]"],
 		"requiredTech": "Smithing",
 		"quote": "'Why man, he doth bestride the narrow world like a colossus, and we petty men walk under his huge legs, and peep about to find ourselves dishonorable graves.' - William Shakespeare, Julius Caesar"
 	},
@@ -348,7 +348,7 @@
 	// Column 5
 	{
 		"name": "Garden",
-		"uniques": ["[+25]% Great Person generation <in this city>", "Must be next to [Fresh water]"],
+		"uniques": ["[+25]% Great Person generation [in this city]", "Must be next to [Fresh water]"],
 		"hurryCostModifier": 25,
 		"maintenance": 1,
 		"requiredTech": "Natural Lore"
@@ -369,8 +369,8 @@
 		"requiredNearbyImprovedResources": ["Iron"],
 		"requiredTech": "Smithing",
 		"uniques": [
-			"[+15]% Production when constructing [Land] units <in this city>",
-			"[+1 Production] from [Iron] tiles <in this city>"
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]"
 		]
 	},
 	// Column 6
@@ -380,7 +380,7 @@
 		"maintenance": 2,
 		"hurryCostModifier": 25,
 		"uniques": [
-			"[+1 Production] from [Water resource] tiles <in this city>",
+			"[+1 Production] from [Water resource] tiles [in this city]",
 			"Connects trade routes over water",
 			"Must be next to [Coast]"
 		],
@@ -461,8 +461,8 @@
 		"culture": 2,
 		"faith": 2,
 		"uniques": [
-			"[+1 Culture, +1 Faith] from [Wine] tiles <in this city>",
-			"[+1 Culture, +1 Faith] from [Incense] tiles <in this city>",
+			"[+1 Culture, +1 Faith] from [Wine] tiles [in this city]",
+			"[+1 Culture, +1 Faith] from [Incense] tiles [in this city]",
 			"Unbuildable", 
 			"Hidden when religion is disabled", 
 			"Destroyed when the city is captured"]
