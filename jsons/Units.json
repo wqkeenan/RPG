@@ -461,9 +461,9 @@
 		"name": "Ranger",
 		"unitType": "Heroic",
 		"movement": 3,
-		"strength": 5,
+		"strength": 6,
 		"cost": 50,
-		"requiredTech": "Is Major",
+		"requiredTech": "Divine Right",
 		"obsoleteTech": "Bardic Tales",
 		"upgradesTo": "Adventurer",
 		"uniques": [
