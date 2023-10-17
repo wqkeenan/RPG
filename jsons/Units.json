@@ -464,6 +464,7 @@
 		"strength": 6,
 		"cost": 50,
 		"requiredTech": "Divine Right",
+		"requiredResource": "Mead",
 		"obsoleteTech": "Bardic Tales",
 		"upgradesTo": "Adventurer",
 		"uniques": [
