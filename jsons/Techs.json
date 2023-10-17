@@ -6,13 +6,23 @@
 		"buildingCost": 40,
 		"wonderCost": 185,
 		"techs": [
- 			{
+			{
 				"name": "Is AI",
 				"row": 8,
 				"quote": "A tech given to the AI to limit is research tree.",
 				"uniques": [
 					"Only available <after discovering [Is AI]>",
 					"Will not be displayed in Civilopedia"
+					]
+			},
+			{
+				"name": "Divine Right",
+				"row": 3,
+				"quote": "A tech given to major human Kingdoms.",
+				"uniques": [
+					"Only available <after discovering [Divine Right]>",
+					"Will not be displayed in Civilopedia",
+					"Starting tech"
 					]
 			},
 			{
@@ -41,7 +51,7 @@
 
 			{
 				"name": "Craft",
-				"row": 3,
+				"row": 4,
 				"uniques": ["Starting tech"]
 			}
 		]
