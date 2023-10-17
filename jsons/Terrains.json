@@ -164,7 +164,7 @@
 			"Snow"
 			],
 		"uniques": [
-			"Rough terrain", "Vegetation",
+			"Rough terrain", "Vegetation", "Rare feature",
 			"Nullifies all other stats this tile provides",
 			"Every [6] tiles with this terrain will receive a major deposit of a strategic resource.",
 			"Units ending their turn on this terrain take [5] damage <with [75]% chance> <for units without [Dungeoneer]>",

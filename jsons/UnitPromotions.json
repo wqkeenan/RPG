@@ -2,12 +2,56 @@
 
 	{
 		"name": "Heal Instantly",
+		"column": 1,
+		"row": 1,
 		"uniques": ["Heal this unit by [50] HP", "Doing so will consume this opportunity to choose a Promotion"],
 		"unitTypes": ["Sword","Mounted","Scout","Siege","Archery","Melee Water","Ranged Water","Submarine","Beast","Monster","Undead","Heroic","Magical","Elemental"]
 	},
+	{
+		"name": "Veteran I",
+		"column": 1,
+		"row": 2,
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Sword","Mounted","Archery","Siege","Heroic","Magical","Melee Water","Ranged Water"]
+	},
+	{
+		"name": "Veteran II",
+		"column": 2,
+		"row": 2,
+		"prerequisites": ["Veteran I"],
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Sword","Mounted","Archery","Siege","Heroic","Magical","Melee Water","Ranged Water"]
+	},
+	{
+		"name": "Veteran III",
+		"column": 3,
+		"row": 2,
+		"prerequisites": ["Veteran II"],
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Sword","Mounted","Archery","Siege","Heroic","Magical","Melee Water","Ranged Water"]
+	},
+	{
+		"name": "Veteran IV",
+		"column": 3,
+		"row": 2,
+		"prerequisites": ["Veteran III"],
+		"uniques": ["[+10]% Strength"],
+		"unitTypes": ["Sword","Mounted","Archery","Siege"]
+	},
+	{
+		"name": "Elite",
+		"column": 5,
+		"row": 2,
+		"prerequisites": ["Veteran III","Shock II","Mountaineer II"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Sword","Mounted","Archery","Siege"]
+	},
+
 	// Adventurers
 	{
 		"name": "Ranger",
+		"column": 1,
+		"row": 3,
 		"uniques": [
 		    "[+50]% Strength <vs [Beast Monster] units>",
 			"[+50]% Strength <vs [Ranged] units> <when defending>",
@@ -17,6 +61,8 @@
 	},
 	{
 		"name": "Way Finder",
+		"column": 2,
+		"row": 3,
 		"prerequisites": ["Ranger"],
 		"uniques": [	
 			"[+10]% Strength <when fighting in [Rough terrain] tiles>",
@@ -27,6 +73,8 @@
 	},
 	{
 		"name": "Beast Tracker",
+		"column": 3,
+		"row": 3,
 		"prerequisites": ["Way Finder"],
 		"uniques": [	
 			"Can see invisible [Beast] units",
@@ -37,6 +85,8 @@
 	},
 	{
 		"name": "Monster Hunter",
+		"column": 4,
+		"row": 3,
 		"prerequisites": ["Beast Tracker"],
 		"uniques": [
 			"Can see invisible [Monster] units",
@@ -47,7 +97,9 @@
 	},
 	{
 		"name": "Blademaster",
-		"prerequisites": ["Ranger"],
+		"column": 5,
+		"row": 3,
+		"prerequisites": ["Monster Hunter","Veteran III"],
 		"uniques": [
 			"[+50]% Strength <when attacking>",
 			"Damage is ignored when determining unit Strength",
@@ -57,12 +109,16 @@
 	},
 	{
 		"name": "Slayer",
+		"column": 6,
+		"row": 3,
 		"prerequisites": ["Blademaster"],
 		"uniques": ["[1] additional attacks per turn"],
 		"unitTypes": ["Heroic"]
 	},
 	{
 		"name": "Dungeoneer",
+		"column": 2,
+		"row": 4,
 		"prerequisites": ["Ranger"],
 		"uniques": [
 			"Creates a [Remove Dungeon] improvement on a specific tile",
@@ -72,17 +128,23 @@
 		"unitTypes": ["Heroic"]
 	},
 	{
-		"name": "Bard",
+		"name": "Bard I",
+		"column": 3,
+		"row": 10,
+		"prerequisites": ["Dungeoneer"],
 		"uniques": [
 			"Earn [10]% of [military] opponent's [Cost] as [Culture] for kills",
     		"May withdraw before melee ([50]%)",
     		"[+50]% Strength <vs [Beast Monster] units> <when defending>",
-    		"Only available <after discovering [Stringed Instruments]>"
+    		"Only available <after discovering [Bardic Tales]>"
     		],
 		"unitTypes": ["Heroic"]
 	},
 	{
-		"name": "Rouge",
+		"name": "Rouge I",
+		"column": 3,
+		"row": 11,
+		"prerequisites": ["Dungeoneer"],
 		"uniques": [
 			"May withdraw before melee ([66]%)",
 			"Earn [20]% of [military] opponent's [Cost] as [Gold] for kills",
@@ -90,6 +152,145 @@
     		"Only available <after discovering [Bardic Tales]>"
     		],
 		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Cleric I",
+		"column": 3,
+		"row": 4,
+		"prerequisites": ["Dungeoneer"],
+		"uniques": [
+		      "Unit will heal every turn, even if it performs an action",
+			  "[+5] HP when healing",
+		      "[+75]% Strength <vs [Undead] units>",
+		      "Can see invisible [Undead] units"
+		      ],
+		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Cleric II",
+		"column": 4,
+		"row": 4,
+		"prerequisites": ["Cleric I"],
+		"uniques": [
+			"[+10] HP when healing",
+			"All adjacent units heal [+5] HP when healing"
+			],
+		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Cleric III",
+		"column": 5,
+		"row": 4,
+		"prerequisites": ["Cleric II"],
+		"uniques": [
+			"[+15] HP when healing",
+			"All adjacent units heal [+10] HP when healing"
+			],
+		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Protection I",
+		"column": 4,
+		"row": 5,
+		"prerequisites": ["Cleric I"],
+		"uniques": [
+    		"[+25]% Strength <vs [Ranged] units> <when defending>", 
+			"[+50]% Strength <vs [Beast Monster] units> <when defending>", 
+    		"[+25]% Strength <vs [Magical Elemental] units> <when defending>",
+			"[+75]% Strength <vs [Undead] units> <when defending>"
+		],
+		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Protection II",
+		"column": 5,
+		"row": 5,
+		"prerequisites": ["Cleric II"],
+		"uniques": [
+    		"[+25]% Strength <vs [Ranged] units> <when defending>", 
+			"[+25]% Strength <vs [Beast Monster] units> <when defending>", 
+    		"[+75]% Strength <vs [Magical Elemental] units> <when defending>",
+			"[+25]% Strength <vs [Undead] units> <when defending>"
+		],
+		"unitTypes": ["Heroic"]
+	},
+	{
+		"name": "Mage I",
+		"column": 3,
+		"row": 6,
+		"prerequisites": ["Dungeoneer"],
+		"uniques": [
+			"[+25]% Strength <vs [Sword Mounted Siege Archery] units> <when attacking>",
+			"[+50]% Strength <vs [Beast Monster Undead Heroic Magical Elemental] units> <when attacking>"],
+		"unitTypes": ["Heroic","Magical"]
+	},
+	{
+		"name": "Mage II",
+		"column": 4,
+		"row": 6,
+		"prerequisites": ["Mage I"],
+		"uniques": [
+			"[+50]% Strength <vs [Beast Monster Heroic] units> <when defending>",
+			"[+100]% Strength <vs [Archery Siege Magical Ranged Water] units> <when defending>"
+			],
+		"unitTypes": ["Heroic","Magical"]
+	},
+	{
+		"name": "Mage III",
+		"column": 5,
+		"row": 6,
+		"prerequisites": ["Mage II"],
+		"uniques": ["[+50]% Strength <when attacking>"],
+		"unitTypes": ["Heroic","Magical"]
+	},
+ 	{
+		"name": "Portal",
+		"column": 6,
+		"row": 6,
+		"prerequisites": ["Mage III"],
+		"uniques": ["May Paradrop up to [7] tiles from inside friendly territory"],
+		"unitTypes": ["Heroic","Magical"]
+	},
+	{
+		"name": "Clairvoyance",
+		"column": 6,
+		"row": 7,
+		"prerequisites": ["Mage III"],
+		"uniques": [
+			"[+1] Sight",
+ 	      	"Can see invisible [All] units",
+			"Can see over obstacles",
+ 			"Ranged attacks may be performed over obstacles"
+			],
+		"unitTypes": ["Beast", "Monster","Heroic","Magical","Undead"]
+	},
+	{
+		"name": "Illusion",
+		"column": 5,
+		"row": 9,
+		"prerequisites": ["Mage II"],
+		"uniques": [
+				"May withdraw before melee ([75]%)",
+				"[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+			],
+		"unitTypes": ["Heroic","Magical"]
+	},
+	{
+		"name": "Invisibility",
+		"column": 6,
+		"row": 9,
+		"prerequisites": ["Illusion"],
+		"uniques": ["Ignores Zone of Control", "Invisible to non-adjacent units"],
+		"unitTypes": ["Heroic","Magical"]
+	},
+	{
+		"name": "Mounted",
+		"uniques": [
+			"[+2] Movement",
+			"Can move after attacking",
+			"Only available <after discovering [Horseback Riding]>"
+			],
+		"unitTypes": ["Scout","Heroic","Magical"]
 	},
 	{
 		"name": "Mithreal Armor",
@@ -109,111 +310,9 @@
 			],
 		"unitTypes": ["Heroic"]
 	},
-	{
-		"name": "Cleric",
-		"uniques": [
-		      "Unit will heal every turn, even if it performs an action",
-			  "[+5] HP when healing",
-		      "[+75]% Strength <vs [Undead] units>",
-		      "Can see invisible [Undead] units"
-		      ],
-		"unitTypes": ["Heroic"]
-	},
-	{
-		"name": "Healing",
-		"prerequisites": ["Cleric"],
-		"uniques": [
-			"[+10] HP when healing",
-			"All adjacent units heal [+5] HP when healing"
-			],
-		"unitTypes": ["Heroic"]
-	},
-	{
-		"name": "Greater Healing",
-		"prerequisites": ["Healing"],
-		"uniques": [
-			"[+15] HP when healing",
-			"All adjacent units heal [+10] HP when healing"
-			],
-		"unitTypes": ["Heroic"]
-	},
-	{
-		"name": "Protection Spell",
-		"prerequisites": ["Cleric"],
-		"uniques": [
-    		"[+25]% Strength <vs [Ranged] units> <when defending>", 
-			"[+50]% Strength <vs [Beast Monster] units> <when defending>", 
-    		"[+75]% Strength <vs [Magical Elemental] units> <when defending>",
-			"[+100]% Strength <vs [Undead] units> <when defending>"
-		],
-		"unitTypes": ["Heroic"]
-	},
-	{
-		"name": "Mage",
-		"uniques": [
-			"[+25]% Strength <vs [Sword Mounted Siege Archery] units> <when attacking>",
-			"[+50]% Strength <vs [Beast Monster Undead Heroic Magical Elemental] units> <when attacking>"],
-		"unitTypes": ["Heroic","Magical"]
-	},
-	{
-		"name": "Lightning Bolt",
-		"prerequisites": ["Mage"],
-		"uniques": ["[+50]% Strength <when attacking>"],
-		"unitTypes": ["Heroic","Magical"]
-	},
-	{
-		"name": "Shield Spell",
-		"prerequisites": ["Mage"],
-		"uniques": [
-			"[+50]% Strength <vs [Beast Monster Heroic] units> <when defending>",
-			"[+100]% Strength <vs [Archery Siege Magical Ranged Water] units> <when defending>"
-			],
-		"unitTypes": ["Heroic","Magical"]
-	},
-	{
-		"name": "Clairvoyance",
-		"prerequisites": ["Mage"],
-		"uniques": [
-			"[+1] Sight",
- 	      	"Can see invisible [All] units",
-			"Can see over obstacles",
- 			"Ranged attacks may be performed over obstacles"
-			],
-		"unitTypes": ["Beast", "Monster","Heroic","Magical","Undead"]
-	},
- 	{
-		"name": "Portal",
-		"prerequisites": ["Mage"],
-		"uniques": ["May Paradrop up to [7] tiles from inside friendly territory"],
-		"unitTypes": ["Heroic","Magical"]
-	},
-	{
-		"name": "Illusion",
-		"prerequisites": ["Clairvoyance"],
-		"uniques": [
-				"May withdraw before melee ([75]%)",
-				"[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
-			],
-		"unitTypes": ["Magical"]
-	},
-	{
-		"name": "Invisibility",
-		"prerequisites": ["Illusion"],
-		"uniques": ["Ignores Zone of Control", "Invisible to non-adjacent units"],
-		"unitTypes": ["Magical"]
-	},
-	{
-		"name": "Mounted",
-		"uniques": [
-			"[+2] Movement",
-			"Can move after attacking",
-			"Only available <after discovering [Horseback Riding]>"
-			],
-		"unitTypes": ["Scout","Heroic","Magical"]
-	},
-   	{
+  	{
 		"name": "Cloak of Elvenkind",
-		"prerequisites": ["Ranger"],
+		"prerequisites": ["Dungeoneer"],
 		"uniques": [
 			"Ignores Zone of Control", 
 			"Invisible to non-adjacent units",
@@ -267,7 +366,7 @@
         	"[+100]% Strength <vs cities> <when defending>"
 			],
 		"unitTypes": ["Beast", "Monster"]
-	}
+	},
 
 	// Ranged+Siege
 	{
@@ -324,29 +423,6 @@
 	},
 
 	// Melee, Mounted+Armor
-	{
-		"name": "Veteran I",
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles>"],
-		"unitTypes": ["Sword","Mounted","Archery","Siege"]
-	},
-	{
-		"name": "Veteran II",
-		"prerequisites": ["Veteran I"],
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles>"],
-		"unitTypes": ["Sword","Mounted","Archery","Siege"]
-	},
-	{
-		"name": "Veteran III",
-		"prerequisites": ["Veteran II"],
-		"uniques": ["[+10]% Strength <when fighting in [Open terrain] tiles>"],
-		"unitTypes": ["Sword","Mounted","Archery","Siege"]
-	},
-	{
-		"name": "Elite",
-		"prerequisites": ["Veteran III","Shock II","Mountaineer II"],
-		"uniques": ["[1] additional attacks per turn"],
-		"unitTypes": ["Sword","Mounted"]
-	},
 	{
 		"name": "Mountaineer I",
 		"prerequisites": ["Veteran I"],

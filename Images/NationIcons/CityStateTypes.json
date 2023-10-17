@@ -39,6 +39,17 @@
         "color": [255, 0, 0]
     },
     {
+        "name": "Mercenary",
+        "friendBonusUniques": [
+            "Provides military units every ≈[25] turns"
+        ],
+        "allyBonusUniques": [
+            "Provides military units every ≈[18] turns",
+            "Discover [Mercenary Contract] <before discovering [Mercenary Contract]>"
+        ],
+        "color": [255, 0, 0]
+    },
+    {
         "name": "Religious",
         "friendBonusUniques":  [
             "[+3 Faith] <before the [Medieval era]>",
