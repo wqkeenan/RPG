@@ -17,8 +17,11 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"cost": 106,
-		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
-			"Requires at least [2] population"],
+		"uniques": [
+			"Founds a new city <by consuming this unit>", 
+			"Excess Food converted to Production when under construction",
+			"Requires at least [2] population"
+		],
 		"hurryCostModifier": 20
 	},
 	{
@@ -28,8 +31,11 @@
 		"strength": 8,
 		"cost": 40,
 		"obsoleteTech": "The Weave",
-		"upgradesTo": "Spearman II",
-		"uniques": ["[+50]% Strength <vs [Mounted Beast] units>"],
+		"upgradesTo": "Pikeman",
+		"uniques": [
+			"[+50]% Strength <vs [Mountedt] units>",
+			"[+50]% Strength <vs [Beast] units>"
+		],
 		"attackSound": "nonmetalhit",
         "civilopediaText": [
 			{"text": "Have spear, will travel."}
@@ -47,13 +53,16 @@
 		"attackSound": "nonmetalhit"
 	},
 	{
-		"name": "Spearman II",
+		"name": "Pikeman",
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 13,
 		"cost": 56,
 		"requiredTech": "The Weave",
-		"uniques": ["[+50]% Strength <vs [Mounted Beast] units>"],
+		"uniques": [
+			"[+50]% Strength <vs [Mountedt] units>",
+			"[+50]% Strength <vs [Beast] units>"
+		],
 		"attackSound": "metalhit"
 	},
 	{
@@ -125,7 +134,7 @@
 		"name": "Zombie",
 		"unitType": "Undead",
 		"uniqueTo": "Barbarians",
-		"replaces": "Swordsman",
+//		"replaces": "Swordsman",
 		"movement": 1,
 		"strength": 11,
 		"cost": 45,
@@ -149,7 +158,7 @@
 		"name": "Troglodyte",
 		"unitType": "Monster",
 		"uniqueTo": "Barbarians",
-		"replaces": "War Elephant",
+//		"replaces": "War Elephant",
 		"movement": 2,
 		"strength": 12,
 		"cost": 50,
@@ -159,17 +168,17 @@
 		"uniques": [
         	"[+33]% Strength <vs [Mounted] units>",
         	"Can move immediately once bought"
- 	       	],
+ 	  	],
 		"attackSound": "nonmetalhit",
-		  "civilopediaText": [
+		"civilopediaText": [
             { "text": "These reptilian humanoids emerge from the deep caverns where they dwell to take captives back to their lair. Horses are terrified of them." }
-            ]
+		]
     },
     {
 		"name": "Dire Wolf",
 		"unitType": "Beast",
 		"uniqueTo": "Barbarians",
-		"replaces": "Horseman",
+//		"replaces": "Horseman",
 		"movement": 2,
 		"strength": 15,
 		"cost": 75,
@@ -451,15 +460,16 @@
 	{
 		"name": "Ranger",
 		"unitType": "Heroic",
-		"replaces": "Scout",
-		"uniqueTo": ["Waterdeep","Neverwinter","Baldurs Gate"],
 		"movement": 3,
 		"strength": 5,
 		"cost": 50,
-		"requiredTech": "Craft",
+		"requiredTech": "Is Major",
 		"obsoleteTech": "Bardic Tales",
 		"upgradesTo": "Adventurer",
-		"uniques": ["May upgrade to [Adventurer] through ruins-like effects", "Never appears as a Barbarian unit"],
+		"uniques": [
+			"May upgrade to [Adventurer] through ruins-like effects", 
+			"Never appears as a Barbarian unit"
+		],
 		"promotions": ["Ranger"],
 		"attackSound": "nonmetalhit"
 	},
@@ -474,7 +484,8 @@
 		"upgradesTo": "Legend",
         "promotions": ["Ranger", "Dungeoneer"],
         "uniques": [
-		          "Never appears as a Barbarian unit"],
+			"Never appears as a Barbarian unit"
+		],
 		"attackSound": "metalhit"
 	},
 	{
@@ -487,8 +498,8 @@
 		"requiredResource": "Mead",
         "promotions": ["Ranger", "Dungeoneer"],
 		"uniques": [
-		          "Never appears as a Barbarian unit"
-				],
+			"Never appears as a Barbarian unit"
+		],
 		"attackSound": "metalhit"
 	},
 
@@ -529,7 +540,7 @@
 		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>" ],
 		"hurryCostModifier": 20,
 		"attackSound": "horse"
-	}
+	},
 
 // Seige
 	{
