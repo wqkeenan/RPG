@@ -32,7 +32,7 @@
 	},
 	{
 		"name": "Veteran IV",
-		"column": 3,
+		"column": 4,
 		"row": 2,
 		"prerequisites": ["Veteran III"],
 		"uniques": ["[+10]% Strength"],
@@ -42,7 +42,7 @@
 		"name": "Elite",
 		"column": 5,
 		"row": 2,
-		"prerequisites": ["Veteran III","Shock II","Mountaineer II"],
+		"prerequisites": ["Veteran IV","Shock II","Mountaineer II"],
 		"uniques": ["[1] additional attacks per turn"],
 		"unitTypes": ["Sword","Mounted","Archery","Siege"]
 	},
