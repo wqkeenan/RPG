@@ -117,7 +117,7 @@
 	},
 	{
 		"name": "Dungeoneer",
-		"column": 2,
+		"column": 1,
 		"row": 4,
 		"prerequisites": ["Ranger"],
 		"uniques": [
@@ -128,7 +128,7 @@
 		"unitTypes": ["Heroic"]
 	},
 	{
-		"name": "Bard I",
+		"name": "Bard",
 		"column": 3,
 		"row": 10,
 		"prerequisites": ["Dungeoneer"],
@@ -141,7 +141,7 @@
 		"unitTypes": ["Heroic"]
 	},
 	{
-		"name": "Rouge I",
+		"name": "Rouge",
 		"column": 3,
 		"row": 11,
 		"prerequisites": ["Dungeoneer"],
@@ -155,7 +155,7 @@
 	},
 	{
 		"name": "Cleric I",
-		"column": 3,
+		"column": 2,
 		"row": 4,
 		"prerequisites": ["Dungeoneer"],
 		"uniques": [
@@ -168,7 +168,7 @@
 	},
 	{
 		"name": "Cleric II",
-		"column": 4,
+		"column": 3,
 		"row": 4,
 		"prerequisites": ["Cleric I"],
 		"uniques": [
@@ -179,7 +179,7 @@
 	},
 	{
 		"name": "Cleric III",
-		"column": 5,
+		"column": 4,
 		"row": 4,
 		"prerequisites": ["Cleric II"],
 		"uniques": [
@@ -190,7 +190,7 @@
 	},
 	{
 		"name": "Protection I",
-		"column": 4,
+		"column": 3,
 		"row": 5,
 		"prerequisites": ["Cleric I"],
 		"uniques": [
@@ -203,7 +203,7 @@
 	},
 	{
 		"name": "Protection II",
-		"column": 5,
+		"column": 4,
 		"row": 5,
 		"prerequisites": ["Cleric II"],
 		"uniques": [
@@ -216,7 +216,7 @@
 	},
 	{
 		"name": "Mage I",
-		"column": 3,
+		"column": 2,
 		"row": 6,
 		"prerequisites": ["Dungeoneer"],
 		"uniques": [
@@ -226,7 +226,7 @@
 	},
 	{
 		"name": "Mage II",
-		"column": 4,
+		"column": 3,
 		"row": 6,
 		"prerequisites": ["Mage I"],
 		"uniques": [
@@ -237,7 +237,7 @@
 	},
 	{
 		"name": "Mage III",
-		"column": 5,
+		"column": 4,
 		"row": 6,
 		"prerequisites": ["Mage II"],
 		"uniques": ["[+50]% Strength <when attacking>"],
@@ -245,7 +245,7 @@
 	},
  	{
 		"name": "Portal",
-		"column": 6,
+		"column": 5,
 		"row": 6,
 		"prerequisites": ["Mage III"],
 		"uniques": ["May Paradrop up to [7] tiles from inside friendly territory"],
@@ -253,7 +253,7 @@
 	},
 	{
 		"name": "Clairvoyance",
-		"column": 6,
+		"column": 5,
 		"row": 7,
 		"prerequisites": ["Mage III"],
 		"uniques": [
@@ -266,7 +266,7 @@
 	},
 	{
 		"name": "Illusion",
-		"column": 5,
+		"column": 4,
 		"row": 9,
 		"prerequisites": ["Mage II"],
 		"uniques": [
@@ -277,7 +277,7 @@
 	},
 	{
 		"name": "Invisibility",
-		"column": 6,
+		"column": 5,
 		"row": 9,
 		"prerequisites": ["Illusion"],
 		"uniques": ["Ignores Zone of Control", "Invisible to non-adjacent units"],
@@ -285,25 +285,30 @@
 	},
 	{
 		"name": "Mounted",
+		"column": 1,
+		"row": 10,
 		"uniques": [
 			"[+2] Movement",
 			"Can move after attacking",
 			"Only available <after discovering [Horseback Riding]>"
 			],
-		"unitTypes": ["Scout","Heroic","Magical"]
+		"unitTypes": ["Heroic","Magical"]
 	},
 	{
 		"name": "Mithreal Armor",
-		"prerequisites": ["Ranger"],
+		"column": 1,
+		"row": 11,
 		"uniques": [
 			"[+50]% Strength <vs [Melee] units> <when defending>",
-			"[+100]% Strength <vs [Ranged] units> <when defending>"
+			"[+100]% Strength <vs [Ranged] units> <when defending>",
+			"Only available <after discovering [The Weave]>"
 			],
 		"unitTypes": ["Heroic"]
 	},
 	{
 		"name": "Enchanted Weapons",
-		"prerequisites": ["Ranger"],
+		"column": 1,
+		"row": 12,
 		"uniques": [
 			"[+50]% Strength <when attacking>",
 			"Only available <after discovering [The Weave]>"
@@ -312,7 +317,8 @@
 	},
   	{
 		"name": "Cloak of Elvenkind",
-		"prerequisites": ["Dungeoneer"],
+		"column": 1,
+		"row": 13,
 		"uniques": [
 			"Ignores Zone of Control", 
 			"Invisible to non-adjacent units",
