@@ -26,17 +26,8 @@
 		"faith": 1,
 		"cost": 40,
 		"maintenance": 1,
-		"requiredTech": "Pottery",
+		"requiredTech": "Mythology",
 		"uniques": ["Hidden when religion is disabled"]
-	},
-	{
-		"name": "Obelisk",
-		"culture": 2,
-		"science": 1,
-		"cost": 40,
-		"hurryCostModifier": 40,
-		"maintenance": 1,
-		"uniques": ["Destroyed when the city is captured"]
 	},
 	{
 		"name": "Jewler",
@@ -273,8 +264,10 @@
 		"name": "Courthouse",
 		"maintenance": 4,
 		"hurryCostModifier": 50,
-		"uniques": ["Remove extra unhappiness from annexed cities",
-			"Can only be built [in annexed cities]"],
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"Can only be built [in annexed cities]"
+		],
 		"requiredTech": "Mathematics"
 	},
 	{
